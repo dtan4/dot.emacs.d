@@ -35,3 +35,8 @@
 ;; same name buffers
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'post-forward-angle-brackets)
+
+;; highlight parenthesis
+(setq show-paren-delay 0)
+(setq show-paren-style 'single)
+(show-paren-mode t)
