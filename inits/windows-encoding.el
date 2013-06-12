@@ -1,0 +1,7 @@
+(setenv "LANG" "ja_JP.UTF-8")
+(set-language-environment "Japanese")
+(set-buffer-file-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(setq default-buffer-file-coding-system 'utf-8)
+(set-selection-coding-system 'utf-16le-dos)
