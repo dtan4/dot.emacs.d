@@ -11,6 +11,7 @@
     auto-highlight-symbol
     highlight-indentation
     helm
+    popwin
     yasnippet
     autoinsert
     magit
