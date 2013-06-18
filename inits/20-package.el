@@ -19,6 +19,7 @@
     mmm-mode
     markdown-mode
     ruby-end
+    rspec-mode
     rhtml-mode
     haml-mode
     coffee-mode
