@@ -12,7 +12,7 @@
     highlight-indentation
     helm
     popwin
-    yasnippet
+    yasnippet-bundle
     autoinsert
     magit
     smart-compile
