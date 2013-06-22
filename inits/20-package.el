@@ -18,6 +18,7 @@
     smart-compile
     mmm-mode
     markdown-mode
+	feature-mode
     ruby-end
     rhtml-mode
     haml-mode
