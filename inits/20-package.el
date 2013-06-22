@@ -12,7 +12,7 @@
     highlight-indentation
     helm
     popwin
-    yasnippet
+    yasnippet-bundle
     autoinsert
     magit
     smart-compile
@@ -20,6 +20,7 @@
     markdown-mode
 	feature-mode
     ruby-end
+    rspec-mode
     rhtml-mode
     haml-mode
     coffee-mode
