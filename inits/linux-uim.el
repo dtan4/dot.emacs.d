@@ -5,6 +5,7 @@
             (delete (assoc "Japanese" uim-lang-code-alist)
                     uim-lang-code-alist)))
 (global-set-key [zenkaku-hankaku] 'uim-mode)
+(global-set-key (kbd "s-`") 'uim-mode)
 (add-hook 'uim-load-hook
           '(lambda ()
              (define-key uim-mode-map [67108896] nil)
