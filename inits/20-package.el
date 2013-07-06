@@ -10,8 +10,9 @@
     wdired
     auto-complete
     auto-highlight-symbol
-    highlight-indentation
+    col-highlight
     helm
+    helm-c-moccur
     popwin
     yasnippet-bundle
     autoinsert
