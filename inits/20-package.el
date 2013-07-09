@@ -21,12 +21,13 @@
     smart-compile
     mmm-mode
     markdown-mode
-	feature-mode
+    feature-mode
     ruby-end
     rspec-mode
     rhtml-mode
     haml-mode
     coffee-mode
+    slim-mode
     ;; add package
     ))
 
