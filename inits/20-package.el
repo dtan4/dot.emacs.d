@@ -28,6 +28,7 @@
     haml-mode
     coffee-mode
     slim-mode
+    mode-compile
     ;; add package
     ))
 
