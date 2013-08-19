@@ -17,6 +17,7 @@
     popwin
     yasnippet-bundle
     autoinsert
+    flymake
     magit
     smart-compile
     mmm-mode
