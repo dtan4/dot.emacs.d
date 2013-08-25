@@ -29,6 +29,7 @@
     haml-mode
     coffee-mode
     slim-mode
+    yaml-mode
     mode-compile
     ;; add package
     ))
