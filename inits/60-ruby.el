@@ -20,6 +20,7 @@
 (add-to-list 'auto-mode-alist '("Gemfile\\.lock$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("config\.ru$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
 
 ;; eRuby (rhtml-mode)
 (require 'rhtml-mode)
