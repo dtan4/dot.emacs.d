@@ -17,8 +17,9 @@
 
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile.lock$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("config.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile\\.lock$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("config\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 
 ;; eRuby (rhtml-mode)
 (require 'rhtml-mode)
