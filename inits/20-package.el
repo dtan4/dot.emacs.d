@@ -10,7 +10,6 @@
     wdired
     auto-complete
     auto-highlight-symbol
-    col-highlight
     exec-path-from-shell
     helm
     helm-c-moccur
