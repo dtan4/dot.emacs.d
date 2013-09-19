@@ -31,6 +31,7 @@
     yaml-mode
     mode-compile
     batch-mode
+    js2-mode
     ;; add package
     ))
 
