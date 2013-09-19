@@ -31,6 +31,7 @@
     slim-mode
     yaml-mode
     mode-compile
+    batch-mode
     ;; add package
     ))
 
