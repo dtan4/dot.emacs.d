@@ -33,6 +33,7 @@
     mode-compile
     batch-mode
     js2-mode
+    vimrc-mode
     ;; add package
     ))
 
