@@ -13,6 +13,7 @@
     exec-path-from-shell
     helm
     helm-c-moccur
+    helm-ls-git
     popwin
     yasnippet-bundle
     autoinsert
