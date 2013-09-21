@@ -9,6 +9,7 @@
                ("\\.tex$" . ["template.tex" my-template])
                ("\\.java$" . ["template.java" my-template])
                ("\\.rb$" . ["template.rb" my-template])
+               ("\\.pl$" . ["template.pl" my-template])
                ) auto-insert-alist))
 (require 'cl)
 (defvar template-replacements-alists
