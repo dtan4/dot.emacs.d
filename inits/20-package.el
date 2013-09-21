@@ -34,6 +34,7 @@
     batch-mode
     js2-mode
     vimrc-mode
+    cperl-mode
     ;; add package
     ))
 
