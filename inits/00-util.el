@@ -68,3 +68,5 @@
         ;; snake case to camel case
         (delete-region s e)
         (insert str))))))
+
+(setq comment-style 'multi-line)
