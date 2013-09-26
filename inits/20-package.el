@@ -15,6 +15,7 @@
     helm-c-moccur
     helm-ls-git
     popwin
+    yasnippet
     yasnippet-bundle
     autoinsert
     flymake
