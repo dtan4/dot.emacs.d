@@ -5,3 +5,4 @@
 (global-set-key (kbd "C-c x") 'kill-compilation)
 (setq compilation-window-height 15)
 (setq compilation-scroll-output t)
+(add-to-list 'smart-compile-alist '("\\.rb$" . "ruby -w %f"))
