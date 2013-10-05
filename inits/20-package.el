@@ -11,6 +11,7 @@
     auto-complete
     auto-highlight-symbol
     exec-path-from-shell
+    gist
     helm
     helm-c-moccur
     helm-ls-git
