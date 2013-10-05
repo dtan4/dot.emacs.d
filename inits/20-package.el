@@ -14,6 +14,7 @@
     helm
     helm-c-moccur
     helm-ls-git
+    helm-rails
     popwin
     yasnippet
     yasnippet-bundle
