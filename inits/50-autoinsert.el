@@ -8,6 +8,7 @@
                ("\\.c$" . ["template.c" my-template])
                ("\\.tex$" . ["template.tex" my-template])
                ("\\.java$" . ["template.java" my-template])
+               ("_spec\\.rb$" . ["template_spec.rb" my-template])
                ("\\.rb$" . ["template.rb" my-template])
                ("\\.pl$" . ["template.pl" my-template])
                ) auto-insert-alist))
