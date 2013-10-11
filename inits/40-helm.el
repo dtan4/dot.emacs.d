@@ -4,5 +4,6 @@
 (global-set-key (kbd "C-x b") 'helm-for-files)
 (global-set-key (kbd "C-x g") 'helm-ls-git-ls)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+(global-set-key (kbd "M-.") 'helm-gtags-select)
 
 (require 'helm-rails)
