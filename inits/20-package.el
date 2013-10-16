@@ -18,6 +18,7 @@
     helm-ls-git
     helm-rails
     popwin
+    undo-tree
     yasnippet
     yasnippet-bundle
     autoinsert
