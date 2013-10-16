@@ -17,6 +17,7 @@
     helm-gtags
     helm-ls-git
     helm-rails
+    helm-descbinds
     popwin
     undo-tree
     yasnippet

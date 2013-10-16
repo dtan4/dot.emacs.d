@@ -7,3 +7,6 @@
 (global-set-key (kbd "M-.") 'helm-gtags-select)
 
 (require 'helm-rails)
+
+(helm-descbinds-mode)
+(global-set-key (kbd "M-? b") 'describe-bindings)
