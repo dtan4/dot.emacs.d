@@ -13,7 +13,6 @@
     exec-path-from-shell
     gist
     helm
-    helm-c-moccur
     helm-gtags
     helm-ls-git
     helm-rails
