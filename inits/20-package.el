@@ -40,6 +40,7 @@
     js2-mode
     vimrc-mode
     cperl-mode
+    sass-mode
     ;; add package
     ))
 
