@@ -41,6 +41,7 @@
     vimrc-mode
     cperl-mode
     sass-mode
+    scss-mode
     ;; add package
     ))
 
