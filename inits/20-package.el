@@ -18,6 +18,7 @@
     helm-rails
     helm-descbinds
     popwin
+    direx
     undo-tree
     yasnippet
     yasnippet-bundle
