@@ -11,3 +11,6 @@
 ;; disable C-x C-c (exit-emacs) -> "M-x exit" to exit Emacs
 (global-unset-key "\C-x\C-c")
 (defalias 'exit 'save-buffers-kill-emacs)
+
+;; C-x p to move to previous window (inverse of C-x o)
+(global-set-key "\C-xp" (lambda () (interactive) (other-window -1)))
