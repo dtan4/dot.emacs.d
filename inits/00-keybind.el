@@ -14,3 +14,6 @@
 
 ;; C-x p to move to previous window (inverse of C-x o)
 (global-set-key "\C-xp" (lambda () (interactive) (other-window -1)))
+
+;; Disable close-other-windows with triple ESC
+(global-set-key (kbd "M-ESC ESC") 'keyboard-quit)
