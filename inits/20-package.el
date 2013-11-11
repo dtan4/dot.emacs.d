@@ -11,6 +11,7 @@
     auto-complete
     auto-highlight-symbol
     exec-path-from-shell
+    foreign-regexp
     gist
     helm
     helm-gtags
