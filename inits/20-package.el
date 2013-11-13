@@ -44,6 +44,7 @@
     cperl-mode
     sass-mode
     scss-mode
+    php-mode
     ;; add package
     ))
 
