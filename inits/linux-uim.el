@@ -5,6 +5,7 @@
                     uim-lang-code-alist)))
 (global-set-key [zenkaku-hankaku] 'uim-mode)
 (global-set-key (kbd "s-`") 'uim-mode)
+(global-set-key (kbd "s-SPC") 'uim-mode)
 (global-set-key (kbd "M-`") 'uim-mode)
 (add-hook 'uim-load-hook
           '(lambda ()
