@@ -30,6 +30,7 @@
     mmm-mode
     markdown-mode
     feature-mode
+    enh-ruby-mode
     ruby-end
     rspec-mode
     rhtml-mode
