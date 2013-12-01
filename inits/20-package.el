@@ -14,6 +14,7 @@
     foreign-regexp
     gist
     helm
+    helm-git-grep
     helm-gtags
     helm-ls-git
     helm-rails
