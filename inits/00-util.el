@@ -79,3 +79,10 @@
                 (when (and (not (file-exists-p dir))
                            (y-or-n-p (format "Directory %s does not exist. Create it?" dir)))
                   (make-directory dir t))))))
+
+;; Show 24-hours clock in mode-line
+(setq display-time-string-forms
+      '((format "%s:%s"
+                24-hours minutes
+                )))
+(display-time)
