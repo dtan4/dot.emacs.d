@@ -42,4 +42,5 @@
              (electric-indent-mode t)
              (electric-layout-mode t)
              (auto-complete-mode t)
+             (auto-highlight-symbol-mode t)
              (rspec-mode t)))
