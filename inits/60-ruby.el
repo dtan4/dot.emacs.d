@@ -30,6 +30,8 @@
 ;; RSpec-mode
 (require 'rspec-mode)
 (custom-set-variables '(rspec-use-rake-flag nil))
+;; (eval-after-load 'rspec-mode
+;;   '(rspec-install-snippets))
 
 ;; ruby-mode extension
 (require 'ruby-end)
