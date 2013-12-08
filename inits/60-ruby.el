@@ -25,6 +25,13 @@
 (add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
 
+(setq enh-ruby-deep-indent-paren-style nil)
+
+;; ruby-block.el
+(require 'ruby-block)
+(ruby-block-mode t)
+(setq ruby-block-highlight-toggle t)
+
 ;; eRuby (rhtml-mode)
 (require 'rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))

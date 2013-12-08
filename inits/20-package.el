@@ -32,6 +32,7 @@
     markdown-mode
     feature-mode
     enh-ruby-mode
+    ruby-block
     ruby-end
     rspec-mode
     rhtml-mode
