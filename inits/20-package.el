@@ -15,6 +15,7 @@
     gist
     helm
     helm-git-grep
+    helm-c-yasnippet
     helm-gtags
     helm-ls-git
     helm-rails
