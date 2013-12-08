@@ -8,15 +8,6 @@
 ;; (global-set-key [S-f9] 'pry-intercept)
 ;; (global-set-key [f9] 'pry-intercept-rerun)
 
-;; ruby-mode extension
-(require 'ruby-end)
-(add-hook 'enh-ruby-mode-hook
-          '(lambda ()
-             (abbrev-mode 1)
-             (electric-pair-mode t)
-             (electric-indent-mode t)
-             (electric-layout-mode t)))
-
 (add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile\\.lock$" . enh-ruby-mode))
@@ -38,3 +29,15 @@
 
 ;; RSpec-mode
 (require 'rspec-mode)
+(custom-set-variables '(rspec-use-rake-flag nil))
+
+;; ruby-mode extension
+(require 'ruby-end)
+(add-hook 'enh-ruby-mode-hook
+          '(lambda ()
+             (abbrev-mode 1)
+             (electric-pair-mode t)
+             (electric-indent-mode t)
+             (electric-layout-mode t)
+             (auto-complete-mode t)
+             (rspec-mode t)))
