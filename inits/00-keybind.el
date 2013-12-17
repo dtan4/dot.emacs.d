@@ -17,3 +17,10 @@
 
 ;; Disable close-other-windows with triple ESC
 (global-set-key (kbd "M-ESC ESC") 'keyboard-quit)
+
+;; C-x <cursor> to move window
+(global-set-key (kbd "C-x <left>") 'windmove-left)
+(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-x <up>") 'windmove-up)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(setq windmove-wrap-around t)
