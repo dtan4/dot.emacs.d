@@ -3,6 +3,7 @@
 (defvar installing-package-list
   '(
     ag
+    all-ext
     linum
     color-theme
     revive
