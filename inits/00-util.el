@@ -87,5 +87,5 @@
                 )))
 (display-time)
 
-;; Confirm to add final newline when the file does not have
-(setq require-final-newline 0)
+;; Add newline at the end of file
+(setq require-final-newline t)
