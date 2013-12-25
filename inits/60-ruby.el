@@ -71,4 +71,5 @@ or else the number of characters matched by `outline-regexp'."
              (electric-layout-mode t)
              (auto-complete-mode t)
              (auto-highlight-symbol-mode t)
+             (ruby-end-mode t)
              (rspec-mode t)))
