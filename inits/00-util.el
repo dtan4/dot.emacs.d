@@ -86,3 +86,6 @@
                 24-hours minutes
                 )))
 (display-time)
+
+;; Confirm to add final newline when the file does not have
+(setq require-final-newline 0)
