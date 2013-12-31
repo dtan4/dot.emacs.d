@@ -1,6 +1,6 @@
 ;; PATH to the ruby installed by rbenv
 (setenv "PATH" (concat (expand-file-name "~/.rbenv/shims:") (getenv "PATH")))
-
+(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (setq enh-ruby-program "~/.rbenv/shims/ruby")
 
 ;; ;; emacs-pry
@@ -17,6 +17,14 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
 
 (setq enh-ruby-deep-indent-paren-style nil)
+
+(add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
+(add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
+(add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
+(add-hook 'enh-ruby-mode-hook 'rspec-mode)
+(add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
+(add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
+(add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
 
 ;; imenu settings
 ;; https://github.com/zenspider/elisp/blob/master/hooks/enh-ruby-mode.el
@@ -47,29 +55,11 @@ or else the number of characters matched by `outline-regexp'."
 (imenu-add-menubar-index)
 
 ;; ruby-block.el
-(require 'ruby-block)
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
 
 ;; eRuby (rhtml-mode)
-(require 'rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
 
 ;; RSpec-mode
-(require 'rspec-mode)
 (custom-set-variables '(rspec-use-rake-flag nil))
-;; (eval-after-load 'rspec-mode
-;;   '(rspec-install-snippets))
-
-;; ruby-mode extension
-(require 'ruby-end)
-(add-hook 'enh-ruby-mode-hook
-          '(lambda ()
-             (abbrev-mode 1)
-             (electric-pair-mode t)
-             (electric-indent-mode t)
-             (electric-layout-mode t)
-             (auto-complete-mode t)
-             (auto-highlight-symbol-mode t)
-             (ruby-end-mode t)
-             (rspec-mode t)))
