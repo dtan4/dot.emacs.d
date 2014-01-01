@@ -8,6 +8,7 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "M-.") 'helm-gtags-select)
 (global-set-key (kbd "M-o") 'helm-occur)
+(global-set-key (kbd "M-g .") 'helm-ag)
 (define-key isearch-mode-map (kbd "M-o") 'helm-occur-from-isearch)
 
 (require 'helm-rails)

@@ -16,6 +16,7 @@
     foreign-regexp
     gist
     helm
+    helm-ag
     helm-git-grep
     helm-c-yasnippet
     helm-gtags
