@@ -19,9 +19,9 @@
 ;; chmod +x after saving shell-script file
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 
-;; tab -> 4 spaces
-(setq-default tab-width 4 indent-tabs-mode nil)
-(setq c-basic-offset 4)
+;; tab -> 2 spaces
+(setq-default tab-width 2 indent-tabs-mode nil)
+(setq c-basic-offset 2)
 
 ;; case-insensitive completation
 (setq read-file-name-completion-ignore-case t)
