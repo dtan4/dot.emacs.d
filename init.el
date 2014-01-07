@@ -14,6 +14,8 @@
     auto-highlight-symbol
     exec-path-from-shell
     foreign-regexp
+    flymake-coffee
+    flymake-cursor
     gist
     helm
     helm-ag

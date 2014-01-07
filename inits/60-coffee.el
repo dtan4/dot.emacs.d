@@ -6,3 +6,8 @@
 
 (add-hook 'coffee-mode-hook
           '(lambda() (coffee-custom)))
+
+(require 'flymake-coffee)
+(add-hook 'coffee-mode-hook 'flymake-coffee-load)
+(setq flymake-coffee-coffeelint-configuration-file
+      (expand-file-name "~/.coffeelint-config.json"))
