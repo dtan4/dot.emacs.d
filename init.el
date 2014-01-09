@@ -16,7 +16,9 @@
     foreign-regexp
     flymake-coffee
     flymake-cursor
+    fringe-helper
     gist
+    git-gutter-fringe
     helm
     helm-ag
     helm-git-grep
