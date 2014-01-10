@@ -17,7 +17,7 @@
         ("texworks\\|evince\\|okular\\|zathura\\|mupdf\\|xpdf\\|acroread\\|pdfopen" . ".pdf")))
 (setq bibtex-command "pbibtex")
 (setq makeindex-command "mendex")
-(setq tex-command "pdfplatex")
+(setq tex-command "platex")
 (setq dvi2-command "texworks")
 (setq dviprint-command-format "pdfopen -viewer ar9-tab %s")
 (defun evince-forward-search ()
