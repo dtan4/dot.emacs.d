@@ -28,6 +28,7 @@
     helm-ls-git
     helm-rails
     helm-descbinds
+    highlight-symbol
     multiple-cursors
     popwin
     direx
