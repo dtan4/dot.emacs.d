@@ -13,6 +13,7 @@
     auto-complete
     auto-highlight-symbol
     exec-path-from-shell
+    expand-region
     foreign-regexp
     flymake-coffee
     flymake-cursor
@@ -27,8 +28,10 @@
     helm-ls-git
     helm-rails
     helm-descbinds
+    multiple-cursors
     popwin
     direx
+    smartrep
     undo-tree
     yasnippet
     yasnippet-bundle
