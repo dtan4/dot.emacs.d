@@ -54,7 +54,7 @@
     yaml-mode
     mode-compile
     batch-mode
-    js2-mode
+    ;; js2-mode
     vimrc-mode
     cperl-mode
     sass-mode
