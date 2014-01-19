@@ -36,6 +36,7 @@
     undo-tree
     yasnippet
     yasnippet-bundle
+    zeal-at-point
     autoinsert
     flymake
     magit
