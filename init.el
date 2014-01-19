@@ -12,6 +12,7 @@
     wdired
     auto-complete
     auto-highlight-symbol
+    dash-at-point
     exec-path-from-shell
     expand-region
     foreign-regexp
