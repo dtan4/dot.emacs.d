@@ -3,6 +3,11 @@
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (setq enh-ruby-program "~/.rbenv/shims/ruby")
 
+;; ruby-block.el
+(require 'ruby-block)
+(ruby-block-mode t)
+(setq ruby-block-highlight-toggle t)
+
 ;; ;; emacs-pry
 ;; (require 'pry)
 ;; (global-set-key [S-f9] 'pry-intercept)
@@ -53,10 +58,6 @@ or else the number of characters matched by `outline-regexp'."
 (enh-update-outline)
 (outline-minor-mode)
 (imenu-add-menubar-index)
-
-;; ruby-block.el
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle t)
 
 ;; eRuby (rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
