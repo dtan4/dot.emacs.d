@@ -30,6 +30,7 @@
     helm-rails
     helm-descbinds
     highlight-symbol
+    htmlize
     multiple-cursors
     popwin
     direx
