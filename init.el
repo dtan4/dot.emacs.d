@@ -87,6 +87,17 @@
     (dolist (pkg not-installed)
       (package-install pkg))))
 
+;; initialize el-get
+(setq el-get-dir "~/.emacs.d/elisp/el-get/")
+(setq gnutls-min-prime-bits 1024)
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(el-get 'sync)
+
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load "~/.emacs.d/inits")
