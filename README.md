@@ -1,7 +1,7 @@
 # .emacs.d
 
 ```
-git clone --recursive git://github.com/dtan4/dot.emacs.d.git /path/to/.emacs.d`
+git clone --recursive git://github.com/dtan4/dot.emacs.d.git /path/to/.emacs.d
 ```
 
 ## Outside package.el
