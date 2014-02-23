@@ -1,5 +1,6 @@
 ;; row-number
 (require 'linum)
+(require 'hlinum)
 (global-linum-mode t)
 (setq linum-format "%4d")
 ;; (setq linum-delay t)
