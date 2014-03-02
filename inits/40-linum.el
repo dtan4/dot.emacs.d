@@ -2,6 +2,7 @@
 (require 'linum)
 (require 'hlinum)
 (global-linum-mode t)
+(hlinum-activate)
 (setq linum-format "%4d")
 ;; (setq linum-delay t)
 ;; (defadvice linum-schedule (around my-linum-schedule () activate)
