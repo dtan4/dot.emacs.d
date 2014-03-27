@@ -3,6 +3,9 @@
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (setq enh-ruby-program "~/.rbenv/shims/ruby")
 
+;; open shebang-added file in enh-ruby-mode
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
 ;; ruby-block.el
 (require 'ruby-block)
 (ruby-block-mode t)
