@@ -64,6 +64,7 @@
     sass-mode
     scss-mode
     php-mode
+    dockerfile-mode
     ;; add package
     ))
 
