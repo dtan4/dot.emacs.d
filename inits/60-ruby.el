@@ -23,6 +23,8 @@
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
+
 
 (setq enh-ruby-deep-indent-paren-style nil)
 
