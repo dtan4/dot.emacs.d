@@ -63,6 +63,7 @@
     cperl-mode
     sass-mode
     scss-mode
+    less-css-mode
     php-mode
     dockerfile-mode
     ;; add package
