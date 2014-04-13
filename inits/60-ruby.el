@@ -1,7 +1,7 @@
 ;; PATH to the ruby installed by rbenv
-(setenv "PATH" (concat (expand-file-name "~/.rbenv/shims:") (getenv "PATH")))
+(setenv "PATH" (concat (expand-file-name "~/.anyenv/envs/rbenv/shims:") (getenv "PATH")))
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
-(setq enh-ruby-program "~/.rbenv/shims/ruby")
+(setq enh-ruby-program "~/.anyenv/envs/rbenv/shims/ruby")
 
 ;; open shebang-added file in enh-ruby-mode
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
