@@ -43,6 +43,7 @@
     autoinsert
     flymake
     magit
+    projectile-rails
     smart-compile
     mmm-mode
     markdown-mode
