@@ -2,71 +2,71 @@
 
 (defvar installing-package-list
   '(
-    init-loader
     ag
     all-ext
-    linum
-    color-theme
-    revive
-    color-moccur
-    wdired
     auto-complete
     auto-highlight-symbol
+    autoinsert
+    batch-mode
+    coffee-mode
+    color-moccur
+    color-theme
+    cperl-mode
     dash-at-point
+    direx
+    dockerfile-mode
+    enh-ruby-mode
     exec-path-from-shell
     expand-region
-    foreign-regexp
+    feature-mode
+    flymake
     flymake-coffee
     flymake-cursor
+    foreign-regexp
     fringe-helper
     gist
     git-gutter-fringe
+    haml-mode
     helm
     helm-ag
-    helm-git-grep
     helm-c-yasnippet
+    helm-descbinds
+    helm-git-grep
     helm-gtags
     helm-ls-git
     helm-rails
-    helm-descbinds
     highlight-symbol
     hlinum
     htmlize
+    init-loader
+    ;; js2-mode
+    less-css-mode
+    linum
+    magit
+    markdown-mode
+    mmm-mode
+    mode-compile
     multiple-cursors
+    php-mode
     popwin
-    direx
+    projectile-rails
+    revive
+    rhtml-mode
+    rspec-mode
+    ruby-block
+    ruby-end
+    sass-mode
+    scss-mode
+    slim-mode
+    smart-compile
     smartrep
     undo-tree
+    vimrc-mode
+    wdired
+    yaml-mode
     yasnippet
     yasnippet-bundle
     zeal-at-point
-    autoinsert
-    flymake
-    magit
-    projectile-rails
-    smart-compile
-    mmm-mode
-    markdown-mode
-    feature-mode
-    enh-ruby-mode
-    ruby-block
-    ruby-end
-    rspec-mode
-    rhtml-mode
-    haml-mode
-    coffee-mode
-    slim-mode
-    yaml-mode
-    mode-compile
-    batch-mode
-    ;; js2-mode
-    vimrc-mode
-    cperl-mode
-    sass-mode
-    scss-mode
-    less-css-mode
-    php-mode
-    dockerfile-mode
     ;; add package
     ))
 
