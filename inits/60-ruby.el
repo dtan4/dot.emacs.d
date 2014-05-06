@@ -18,7 +18,6 @@
 
 (add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile\\.lock$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("config\.ru$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
