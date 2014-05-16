@@ -27,6 +27,15 @@
 
 (setq enh-ruby-deep-indent-paren-style nil)
 
+;; Do not insert magic comment
+(defadvice enh-ruby-mode-set-encoding (around stop-enh-ruby-mode-set-encoding)
+  "If enh-ruby-not-insert-magic-comment is true, stops enh-ruby-mode-set-encoding."
+  (if (and (boundp 'enh-ruby-not-insert-magic-comment)
+           (not enh-ruby-not-insert-magic-comment))
+      ad-do-it))
+(ad-activate 'enh-ruby-mode-set-encoding)
+(setq-default enh-ruby-not-insert-magic-comment t)
+
 (add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
