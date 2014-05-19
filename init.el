@@ -34,6 +34,7 @@
     helm-git-grep
     helm-gtags
     helm-ls-git
+    helm-projectile
     helm-rails
     highlight-symbol
     hlinum
