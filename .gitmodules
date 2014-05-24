@@ -1,3 +1,0 @@
-[submodule "elisp/emacs-skype"]
-	path = elisp/emacs-skype
-	url = https://github.com/kiwanami/emacs-skype.git
