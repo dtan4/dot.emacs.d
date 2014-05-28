@@ -26,6 +26,7 @@
     fringe-helper
     gist
     git-gutter-fringe
+    gnuplot-mode
     haml-mode
     helm
     helm-ag
