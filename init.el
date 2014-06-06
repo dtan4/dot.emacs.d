@@ -4,6 +4,7 @@
   '(
     ag
     all-ext
+    apples-mode
     auto-complete
     auto-highlight-symbol
     autoinsert
