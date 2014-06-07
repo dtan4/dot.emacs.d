@@ -50,6 +50,7 @@
     mmm-mode
     mode-compile
     multiple-cursors
+    nginx-mode
     php-mode
     popwin
     projectile-rails
