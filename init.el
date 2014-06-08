@@ -51,6 +51,7 @@
     mode-compile
     multiple-cursors
     nginx-mode
+    open-junk-file
     php-mode
     popwin
     projectile-rails
