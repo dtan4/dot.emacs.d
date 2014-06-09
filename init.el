@@ -56,6 +56,7 @@
     popwin
     projectile-rails
     revive
+    recentf-ext
     rhtml-mode
     rspec-mode
     ruby-block
