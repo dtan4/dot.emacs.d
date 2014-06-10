@@ -10,6 +10,7 @@
 (require 'ruby-block)
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
+(setq ruby-block-delay 0.1)
 
 ;; ;; emacs-pry
 ;; (require 'pry)
