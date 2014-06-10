@@ -11,6 +11,7 @@
                ("_spec\\.rb$" . ["template_spec.rb" my-template])
                ("\\.rb$" . ["template.rb" my-template])
                ("\\.pl$" . ["template.pl" my-template])
+               ("\\.sh$" . ["template.sh" my-template])
                ) auto-insert-alist))
 (require 'cl)
 (defvar template-replacements-alists
