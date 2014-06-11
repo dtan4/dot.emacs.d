@@ -1,6 +1,6 @@
 (require 'auto-highlight-symbol)
 (global-auto-highlight-symbol-mode t)
-(ahs-set-idle-interval 1)
+(ahs-set-idle-interval 0.3)
 (setq ahs-case-fold-search nil)
 
 (require 'highlight-symbol)
