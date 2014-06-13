@@ -2,6 +2,7 @@
 
 (defvar installing-package-list
   '(
+    init-loader
     ag
     all-ext
     apples-mode
@@ -41,7 +42,6 @@
     highlight-symbol
     hlinum
     htmlize
-    init-loader
     ;; js2-mode
     less-css-mode
     linum
