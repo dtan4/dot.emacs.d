@@ -84,7 +84,7 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; load all elisps under ~/.emacs.d/elisp
+;; load all elisps under ~/.emacs.d/site-lisp
 (let ((default-directory (concat user-emacs-directory "site-lisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
