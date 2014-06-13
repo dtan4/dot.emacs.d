@@ -1,7 +1,6 @@
 ;; YASnippet
 (require 'yasnippet)
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"))
+(setq yas-snippet-dirs (concat user-emacs-directory "snippets"))
 (yas-global-mode 1)
 (custom-set-variables '(yas-trigger-key "TAB"))
 

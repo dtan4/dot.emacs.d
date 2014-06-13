@@ -1,6 +1,6 @@
 ;; auto-insert-mode
 (require 'autoinsert)
-(setq auto-insert-directory "~/.emacs.d/template")
+(setq auto-insert-directory (concat user-emacs-directory "template"))
 ;; 各ファイルによってテンプレートを切り替える
 (setq auto-insert-alist
       (nconc '(

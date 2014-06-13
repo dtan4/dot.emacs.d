@@ -1,6 +1,6 @@
 ;; auto-complete-mode
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(add-to-list 'ac-dictionary-directories (concat user-emacs-directory "ac-dict"))
 (ac-config-default)
 (setq ac-auto-start 4)
 (setq ac-use-menu-map t)

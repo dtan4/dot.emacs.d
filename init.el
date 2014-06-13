@@ -79,13 +79,13 @@
 
 ;; initialize package.el
 (require 'package)
-(setq package-user-dir "~/.emacs.d/elisp")
+(setq package-user-dir (concat user-emacs-directory "elisp"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
 ;; load all elisps under ~/.emacs.d/elisp
-(let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
+(let ((default-directory (concat user-emacs-directory "elisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
@@ -117,4 +117,4 @@
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
-(init-loader-load "~/.emacs.d/inits")
+(init-loader-load (concat user-emacs-directory "inits"))
