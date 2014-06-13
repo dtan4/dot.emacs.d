@@ -2,9 +2,12 @@ DEPENDENCIES
   apt
     git: git://github.com/opscode-cookbooks/apt.git
     revision: ac1917c66a9d67fb4a0afeffaa92195b7385887e
+  dot-emacs
+    path: site-cookbooks/dot-emacs
   emacs
     path: site-cookbooks/emacs
 
 GRAPH
   apt (2.4.1)
+  dot-emacs (0.1.0)
   emacs (0.1.0)

@@ -13,4 +13,5 @@ suites:
     run_list:
       - recipe[apt]
       - recipe[emacs]
+      - recipe[dot-emacs]
     attributes:
