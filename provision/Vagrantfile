@@ -10,4 +10,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "private_network", ip: "192.168.33.10"
 
   config.omnibus.chef_version = :latest
+
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
+    chef.run_list = %w(
+      recipe[apt]
+    )
+  end
 end
