@@ -15,6 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
     chef.run_list = %w(
       recipe[apt]
+      recipe[emacs]
     )
   end
 end
