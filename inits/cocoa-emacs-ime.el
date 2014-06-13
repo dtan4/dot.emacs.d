@@ -3,3 +3,4 @@
 (mac-set-input-method-parameter "com.google.inputmethod.Japanese.base" `cursor-color "red")
 (mac-set-input-method-parameter "com.google.inputmethod.Japanese.Roman" `cursor-color "yellow")
 (add-hook 'minibuffer-setup-hook 'mac-change-language-to-us)
+(mac-translate-from-yen-to-backslash)
