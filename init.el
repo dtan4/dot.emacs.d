@@ -55,6 +55,7 @@
     php-mode
     popwin
     projectile-rails
+    quickrun
     revive
     recentf-ext
     rhtml-mode
