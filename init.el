@@ -41,7 +41,6 @@
     highlight-symbol
     hlinum
     htmlize
-    init-loader
     ;; js2-mode
     less-css-mode
     linum
@@ -115,6 +114,30 @@
 ;;                 wanderlust
 ;;                 ))
 
-(require 'init-loader)
-(setq init-loader-show-log-after-init nil)
-(init-loader-load (concat user-emacs-directory "inits"))
+;; http://d.hatena.ne.jp/sugyan/20120104/1325683745
+(defgroup init-loader nil
+  "init loader"
+  :group 'init-loader)
+(defcustom init-loader-directory (expand-file-name "~/.emacs.d/inits")
+  "default directory"
+  :type 'directory
+  :group 'init-loader)
+(defcustom init-loader-default-regexp "\\(?:^[[:digit:]]\\{2\\}-.*\.elc?\\)$"
+  "default filename regexp"
+  :type 'regexp
+  :group 'init-loader)
+(let* ((init-dir init-loader-directory)
+       (load-path (cons init-dir load-path))
+       (files (directory-files init-dir t))
+       (targets (loop for file in (directory-files init-dir t)
+                      when (let ((file (file-name-nondirectory file)))
+                             (and (string-match init-loader-default-regexp file)
+                                  (or (and (string-match "\.el$" file)
+                                           (or (not (locate-library (concat file "c")))))
+                                      (string-match "\.elc$" file))))
+                      collect file into ret
+                      finally return (sort ret 'string<))))
+  (dolist (target targets)
+    (condition-case e
+        (load (file-name-sans-extension target))
+      (error (message "%s" e)))))
