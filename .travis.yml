@@ -9,4 +9,5 @@ before_install:
     sudo apt-get install -qq emacs24 emacs24-el texinfo;
     fi
 script:
-  emacs batch -Q -L .emacs.d -l .emacs.d/init.el 
+  # http://d.hatena.ne.jp/rubikitch/20101125/emacs
+  emacs batch --eval '(setq debug-on-error t)' -l ./init.el
