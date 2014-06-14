@@ -8,3 +8,4 @@ var
 .mc-lists.el
 .woman_cache.el
 projectile-bookmarks.eld
+*.elc

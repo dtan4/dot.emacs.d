@@ -2,6 +2,7 @@
 
 (defvar installing-package-list
   '(
+    init-loader
     ag
     all-ext
     apples-mode
@@ -41,7 +42,6 @@
     highlight-symbol
     hlinum
     htmlize
-    init-loader
     ;; js2-mode
     less-css-mode
     linum
@@ -84,8 +84,8 @@
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
 
-;; load all elisps under ~/.emacs.d/elisp
-(let ((default-directory (concat user-emacs-directory "elisp")))
+;; load all elisps under ~/.emacs.d/site-lisp
+(let ((default-directory (concat user-emacs-directory "site-lisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
@@ -117,4 +117,5 @@
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
+(setq init-loader-byte-compile t)
 (init-loader-load (concat user-emacs-directory "inits"))
