@@ -89,3 +89,8 @@
 
 ;; Add newline at the end of file
 (setq require-final-newline t)
+
+;; Follow symlinks
+;; http://ymotongpoo.hatenablog.com/entry/20110206/1296983970
+(setq vc-follow-symlinks t)
+(setq auto-revert-check-vc-info t)
