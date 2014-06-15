@@ -5,11 +5,12 @@
   )
 
 (add-hook 'coffee-mode-hook
-          '(lambda() (coffee-custom)))
+          '(lambda()
+             (progn
+               (coffee-custom)
+               (define-key coffee-mode-map (kbd "<backspace>") 'delete-backward-char))))
 
 (require 'flymake-coffee)
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 (setq flymake-coffee-coffeelint-configuration-file
       (expand-file-name "~/.coffeelint-config.json"))
-
-(define-key coffee-mode-map (kbd "<backspace>") 'delete-backward-char)
