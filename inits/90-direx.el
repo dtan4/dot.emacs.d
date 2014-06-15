@@ -1,7 +1,4 @@
 ;; http://d.hatena.ne.jp/syohex/20130202/1359814263
-(require 'direx)
-(require 'direx-project)
-
 (defun my/dired-jump ()
   (interactive)
   (cond (current-prefix-arg

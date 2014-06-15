@@ -1,4 +1,3 @@
-;; auto-complete-mode
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories (concat user-emacs-directory "ac-dict"))
 (ac-config-default)

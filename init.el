@@ -117,11 +117,4 @@
 
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
-(setq init-loader-byte-compile t)
 (init-loader-load (concat user-emacs-directory "inits"))
-
-(add-hook 'after-init-hook
-          (lambda ()
-            (message "init time: %d msec"
-                     (+ (* (- (nth 1 after-init-time) (nth 1 before-init-time)) 1000)
-                        (/ (- (nth 2 after-init-time) (nth 2 before-init-time)) 1000)))))

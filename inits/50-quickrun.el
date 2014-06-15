@@ -1,6 +1,8 @@
 ;; http://konbu13.hatenablog.com/entry/2014/02/15/231028
-(require 'quickrun)
-(push '("*quickrun*") popwin:special-display-config)
+(eval-after-load "quickrun"
+  '(progn
+     (push '("*quickrun*") popwin:special-display-config)))
+
 (defun my-quickrun-output-fix ()
   (interactive)
   (quickrun)

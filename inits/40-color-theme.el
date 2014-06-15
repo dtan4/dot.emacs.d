@@ -1,6 +1,5 @@
 ;; Color theme
 (cond ((not (null window-system))
-       (require 'color-theme)
        (color-theme-initialize)
        (color-theme-dark-laptop)
        ))
