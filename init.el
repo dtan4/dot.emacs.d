@@ -65,7 +65,6 @@
     sass-mode
     scss-mode
     slim-mode
-    smart-compile
     smartrep
     undo-tree
     vimrc-mode
