@@ -1,6 +1,0 @@
-(defun my-skype ()
-  (interactive)
-  (require 'skype)
-  (setq skype--my-user-handle "Dtanshi")
-  (skype--init)
-  (skype--open-recent-chat-buffer-command))
