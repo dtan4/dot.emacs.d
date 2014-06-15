@@ -27,6 +27,7 @@
     foreign-regexp
     fringe-helper
     gist
+    gitconfig-mode
     git-gutter-fringe
     gnuplot-mode
     haml-mode
