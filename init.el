@@ -1,5 +1,8 @@
 (require 'cl)
 
+;; reduce frequency of GC
+(setq gc-cons-threshold 4194304)
+
 (defvar installing-package-list
   '(
     init-loader
