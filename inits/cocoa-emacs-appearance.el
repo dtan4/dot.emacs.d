@@ -1,11 +1,12 @@
 ;; Font settings
 ;; 01234567890123456789
 ;; あいうえおかきくけこ
-(set-face-attribute 'default nil
-                    :family "Ricty"
-                    :height 160)
-(set-fontset-font nil 'japanese-jisx0208
-                  (font-spec :family "Ricty" :registry "unicode-bmp"))
+(if (find-font (font-spec :name "Ricty"))
+    (progn (set-face-attribute 'default nil
+                        :family "Ricty"
+                        :height 160)
+           (set-fontset-font nil 'japanese-jisx0208
+                             (font-spec :family "Ricty" :registry "unicode-bmp"))))
 
 ;; (setq initial-frame-alist
 ;;      (append (list
