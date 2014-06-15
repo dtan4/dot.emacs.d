@@ -21,6 +21,7 @@
     direx
     dockerfile-mode
     enh-ruby-mode
+    esup
     exec-path-from-shell
     expand-region
     feature-mode
@@ -118,3 +119,5 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init nil)
 (init-loader-load (concat user-emacs-directory "inits"))
+
+(require 'esup)
