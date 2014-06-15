@@ -25,7 +25,6 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
 
-
 (setq enh-ruby-deep-indent-paren-style nil)
 
 ;; Do not insert magic comment
@@ -44,34 +43,6 @@
 (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
-
-;; imenu settings
-;; https://github.com/zenspider/elisp/blob/master/hooks/enh-ruby-mode.el
-(defun ruby-outline-level ()
-  "Return the depth to which a statement is nested in the outline.
-Point must be at the beginning of a header line.
-This is actually either the level specified in `outline-heading-alist'
-or else the number of characters matched by `outline-regexp'."
-  (let ((level (or (and (looking-at outline-regexp)
-                        (match-string 1)
-                        (- (match-end 1) (match-beginning 1)))
-                   0)))
-    (1+ (/ level 2))))
-(set (make-local-variable 'outline-level) 'ruby-outline-level)
-(setq outline-regexp-ruby
-      (rx (group (* " "))
-          bow
-          (or "BEGIN" "END" "begin" "case" "class" "def" "else" "elsif" "loop"
-              ;; "end"
-              "ensure" "for" "if" "module" "rescue" "unless" "until"
-              "when" "while")
-          eow))
-(defun enh-update-outline ()
-  (interactive)
-  (set (make-local-variable 'outline-regexp) outline-regexp-ruby))
-(enh-update-outline)
-(outline-minor-mode)
-(imenu-add-menubar-index)
 
 ;; eRuby (rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
