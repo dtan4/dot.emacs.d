@@ -13,9 +13,6 @@
 
 (require 'helm-rails)
 
-(require 'helm-c-yasnippet)
-(global-set-key (kbd "C-c y") 'helm-c-yas-complete)
-
 (helm-descbinds-mode)
 (global-set-key (kbd "M-? b") 'describe-bindings)
 
