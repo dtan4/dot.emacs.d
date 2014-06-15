@@ -44,6 +44,22 @@
 (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
 
+;; http://willnet.in/13
+(defadvice enh-ruby-indent-line (after unindent-closing-paren activate)
+  (let ((column (current-column))
+        indent offset)
+    (save-excursion
+      (back-to-indentation)
+      (let ((state (syntax-ppss)))
+        (setq offset (- column (current-column)))
+        (when (and (eq (char-after) ?\))
+                   (not (zerop (car state))))
+          (goto-char (cadr state))
+          (setq indent (current-indentation)))))
+    (when indent
+      (indent-line-to indent)
+      (when (> offset 0) (forward-char offset)))))
+
 ;; eRuby (rhtml-mode)
 (add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
 
