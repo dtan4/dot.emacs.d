@@ -70,6 +70,7 @@
     scss-mode
     slim-mode
     smartrep
+    tss
     undo-tree
     vimrc-mode
     wdired
