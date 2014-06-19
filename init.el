@@ -34,6 +34,7 @@
     gitconfig-mode
     git-gutter-fringe
     gnuplot-mode
+    go-mode
     haml-mode
     helm
     helm-ag
