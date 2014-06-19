@@ -10,5 +10,4 @@ before_install:
     fi
   - ln -s `pwd` ~/.emacs.d
 script:
-  # http://d.hatena.ne.jp/rubikitch/20101125/emacs
-  emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
+  rake test
