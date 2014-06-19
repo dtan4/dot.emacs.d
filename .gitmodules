@@ -1,0 +1,3 @@
+[submodule "site-lisp/yatex"]
+	path = site-lisp/yatex
+	url = https://github.com/emacsmirror/yatex.git
