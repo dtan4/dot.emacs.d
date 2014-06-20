@@ -6,5 +6,4 @@ git clone --recursive git://github.com/dtan4/dot.emacs.d.git /path/to/.emacs.d
 ```
 
 ## Out of package.el
-* [YaTeX](http://www.yatex.org/) (site-lisp/yatex)
 * mozc.el (Linux only, install via package management system)
