@@ -39,6 +39,7 @@
     helm
     helm-ag
     helm-descbinds
+    helm-ghq
     helm-git-grep
     helm-gtags
     helm-ls-git

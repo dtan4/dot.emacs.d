@@ -4,6 +4,7 @@
 (global-set-key (kbd "C-x b") 'helm-for-files)
 (global-set-key (kbd "C-c f") 'helm-git-grep)
 (global-set-key (kbd "C-x g") 'helm-ls-git-ls)
+(global-set-key (kbd "C-x w") 'helm-ghq)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "M-.") 'helm-gtags-select)
 (global-set-key (kbd "M-o") 'helm-occur)
