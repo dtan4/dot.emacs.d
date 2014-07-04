@@ -56,6 +56,7 @@
     mmm-mode
     mode-compile
     multiple-cursors
+    muttrc-mode
     nginx-mode
     open-junk-file
     php-mode
