@@ -23,7 +23,7 @@
 (add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . enh-ruby-mode))
 
-(setq enh-ruby-deep-indent-paren-style nil)
+(setq enh-ruby-deep-indent-paren nil)
 
 ;; Do not insert magic comment
 (defadvice enh-ruby-mode-set-encoding (around stop-enh-ruby-mode-set-encoding)
