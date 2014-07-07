@@ -104,5 +104,7 @@
       (package-install pkg))))
 
 (require 'init-loader)
-(setq init-loader-show-log-after-init nil)
+;; http://d.hatena.ne.jp/syohex/20140706/1404637327
+(custom-set-variables
+ '(init-loader-show-log-after-init 'error-only))
 (init-loader-load (concat user-emacs-directory "inits"))
