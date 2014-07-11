@@ -1,3 +1,6 @@
 [submodule "site-lisp/yatex"]
 	path = site-lisp/yatex
 	url = https://github.com/emacsmirror/yatex.git
+[submodule "site-lisp/plantuml-mode"]
+	path = site-lisp/plantuml-mode
+	url = https://github.com/zwz/plantuml-mode.git
