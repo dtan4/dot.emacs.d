@@ -8,6 +8,7 @@
     init-loader
     ag
     all-ext
+    anzu
     apples-mode
     auto-complete
     auto-highlight-symbol
