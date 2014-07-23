@@ -1,5 +1,0 @@
-source "https://api.berkshelf.com"
-
-cookbook 'apt', git: 'git://github.com/opscode-cookbooks/apt.git'
-cookbook 'emacs', path: './site-cookbooks/emacs'
-cookbook 'dot-emacs', path: './site-cookbooks/dot-emacs'
