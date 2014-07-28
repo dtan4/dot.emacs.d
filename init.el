@@ -22,6 +22,7 @@
     direx
     dockerfile-mode
     enh-ruby-mode
+    ess
     esup
     exec-path-from-shell
     expand-region
