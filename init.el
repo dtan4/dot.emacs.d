@@ -65,6 +65,7 @@
     popwin
     projectile-rails
     quickrun
+    rainbow-mode
     revive
     recentf-ext
     rhtml-mode
