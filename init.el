@@ -22,6 +22,7 @@
     direx
     dockerfile-mode
     enh-ruby-mode
+    ess
     esup
     exec-path-from-shell
     expand-region
@@ -64,6 +65,7 @@
     popwin
     projectile-rails
     quickrun
+    rainbow-mode
     revive
     recentf-ext
     rhtml-mode
