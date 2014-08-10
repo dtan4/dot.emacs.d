@@ -1,3 +1,3 @@
 (require 'zlc)
 (zlc-mode t)
-(setq zlc-select-completion-immediately t)
+(setq zlc-select-completion-immediately nil)
