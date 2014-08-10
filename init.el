@@ -82,6 +82,7 @@
     wdired
     yaml-mode
     zeal-at-point
+    zlc
     ;; add package
     ))
 
