@@ -55,6 +55,7 @@
     linum
     magit
     markdown-mode
+    migemo
     mmm-mode
     mode-compile
     multiple-cursors
