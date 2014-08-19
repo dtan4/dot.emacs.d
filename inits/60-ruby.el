@@ -58,8 +58,5 @@
       (indent-line-to indent)
       (when (> offset 0) (forward-char offset)))))
 
-;; eRuby (rhtml-mode)
-(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
-
 ;; RSpec-mode
 (custom-set-variables '(rspec-use-rake-flag nil))
