@@ -36,6 +36,8 @@
     gitconfig-mode
     git-gutter-fringe
     gnuplot-mode
+    go-autocomplete
+    go-eldoc
     go-mode
     haml-mode
     helm
