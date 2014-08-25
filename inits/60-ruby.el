@@ -1,10 +1,10 @@
 ;; PATH to the ruby installed by rbenv
 (setenv "PATH" (concat (expand-file-name "~/.anyenv/envs/rbenv/shims:") (getenv "PATH")))
-(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
-(setq enh-ruby-program "~/.anyenv/envs/rbenv/shims/ruby")
+;; (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
+;; (setq enh-ruby-program "~/.anyenv/envs/rbenv/shims/ruby")
 
-;; open shebang-added file in enh-ruby-mode
-(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+;; open shebang-added file in ruby-mode
+(add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 
 ;; ruby-block.el
 (require 'ruby-block)
@@ -12,38 +12,38 @@
 (setq ruby-block-highlight-toggle t)
 (setq ruby-block-delay 0.1)
 
-(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.pryrc$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("config\.ru$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Capfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.pryrc$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("config\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Berksfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 
-(setq enh-ruby-deep-indent-paren nil)
+(setq ruby-deep-indent-paren nil)
 
 ;; Do not insert magic comment
-(defadvice enh-ruby-mode-set-encoding (around stop-enh-ruby-mode-set-encoding)
-  "If enh-ruby-not-insert-magic-comment is true, stops enh-ruby-mode-set-encoding."
-  (if (and (boundp 'enh-ruby-not-insert-magic-comment)
-           (not enh-ruby-not-insert-magic-comment))
+(defadvice ruby-mode-set-encoding (around stop-ruby-mode-set-encoding)
+  "If ruby-not-insert-magic-comment is true, stops ruby-mode-set-encoding."
+  (if (and (boundp 'ruby-not-insert-magic-comment)
+           (not ruby-not-insert-magic-comment))
       ad-do-it))
-(ad-activate 'enh-ruby-mode-set-encoding)
-(setq-default enh-ruby-not-insert-magic-comment t)
+(ad-activate 'ruby-mode-set-encoding)
+(setq-default ruby-not-insert-magic-comment t)
 
-(add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
-(add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
-(add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
-(add-hook 'enh-ruby-mode-hook 'rspec-mode)
-(add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
-(add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
-(add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
+(add-hook 'ruby-mode-hook 'ruby-end-mode)
+(add-hook 'ruby-mode-hook 'auto-highlight-symbol-mode)
+(add-hook 'ruby-mode-hook 'auto-complete-mode)
+(add-hook 'ruby-mode-hook 'rspec-mode)
+(add-hook 'ruby-mode-hook 'electric-pair-mode)
+(add-hook 'ruby-mode-hook 'electric-indent-mode)
+(add-hook 'ruby-mode-hook 'electric-layout-mode)
 
 ;; http://willnet.in/13
-(defadvice enh-ruby-indent-line (after unindent-closing-paren activate)
+(defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
         indent offset)
     (save-excursion
