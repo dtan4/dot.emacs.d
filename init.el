@@ -81,6 +81,7 @@
     undo-tree
     vimrc-mode
     wdired
+    web-mode
     yaml-mode
     zeal-at-point
     zlc
