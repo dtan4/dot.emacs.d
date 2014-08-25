@@ -16,4 +16,5 @@
 
 (set-scroll-bar-mode nil)
 
-(set-frame-parameter nil 'alpha 95)
+;; http://d.hatena.ne.jp/rkworks/20130124/1359042654
+(set-frame-parameter nil 'alpha 100)
