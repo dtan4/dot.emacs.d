@@ -16,7 +16,6 @@
     batch-mode
     coffee-mode
     color-moccur
-    color-theme
     cperl-mode
     dash-at-point
     direx

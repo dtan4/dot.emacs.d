@@ -1,7 +1,9 @@
 ;; Color theme
 (cond ((not (null window-system))
-       (color-theme-initialize)
-       (color-theme-dark-laptop)
+       (add-to-list 'custom-theme-load-path
+                    (file-name-as-directory "~/.emacs.d/site-lisp/replace-colorthemes/"))
+       (load-theme 'dark-laptop t t)
+       (enable-theme 'dark-laptop)
        ))
 (set-face-foreground 'mode-line "green")
 (set-face-background 'mode-line "gray10")
