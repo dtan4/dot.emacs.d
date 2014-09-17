@@ -37,7 +37,7 @@
     gnuplot-mode
     go-autocomplete
     go-eldoc
-    go-mode
+    ;; go-mode
     haml-mode
     helm
     helm-ag
