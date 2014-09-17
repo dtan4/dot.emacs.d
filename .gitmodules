@@ -4,3 +4,6 @@
 [submodule "site-lisp/plantuml-mode"]
 	path = site-lisp/plantuml-mode
 	url = https://github.com/zwz/plantuml-mode.git
+[submodule "site-lisp/replace-colorthemes"]
+	path = site-lisp/replace-colorthemes
+	url = https://github.com/emacs-jp/replace-colorthemes.git
