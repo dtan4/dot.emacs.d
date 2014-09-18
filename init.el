@@ -79,6 +79,7 @@
     scss-mode
     slim-mode
     smartrep
+    sql-indent
     tss
     undo-tree
     vimrc-mode
