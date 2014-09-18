@@ -64,6 +64,7 @@
     nginx-mode
     open-junk-file
     php-mode
+    pig-mode
     popwin
     projectile-rails
     quickrun
