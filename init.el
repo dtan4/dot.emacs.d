@@ -29,6 +29,7 @@
     flymake
     flymake-coffee
     flymake-cursor
+    flymake-yaml
     foreign-regexp
     fringe-helper
     gist
