@@ -1,3 +1,5 @@
+DOT_EMACS_DIR = File.join(ENV["HOME"], ".emacs.d")
+
 task default: %w(clean update_submodule test)
 
 desc "Clean up installed packages"
@@ -9,7 +11,10 @@ end
 
 desc "Update submodule"
 task :update_submodule do
-  sh %q(git submodule update --recursive)
+  Dir["site-lisp/*/"].map { |dir| File.join(DOT_EMACS_DIR, dir[0..-1]) }.each do |dir|
+    Dir.chdir(dir)
+    sh %(git pull origin master)
+  end
 end
 
 desc "Launch Emacs and test whether it exits successfully"
