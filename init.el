@@ -84,6 +84,7 @@
     tss
     undo-tree
     vimrc-mode
+    volatile-highlights
     wdired
     web-mode
     yaml-mode
