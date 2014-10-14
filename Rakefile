@@ -15,6 +15,8 @@ task :update_submodule do
     Dir.chdir(dir)
     sh %(git pull origin master)
   end
+
+  Dir.chdir(DOT_EMACS_DIR)
 end
 
 desc "Launch Emacs and test whether it exits successfully"
