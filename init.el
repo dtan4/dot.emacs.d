@@ -39,6 +39,7 @@
     go-autocomplete
     go-eldoc
     ;; go-mode
+    groovy-mode
     haml-mode
     helm
     helm-ag
