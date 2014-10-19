@@ -6,6 +6,8 @@
 (defvar installing-package-list
   '(
     init-loader
+    go-mode
+    ;;
     ag
     all-ext
     anzu
@@ -38,7 +40,6 @@
     gnuplot-mode
     go-autocomplete
     go-eldoc
-    ;; go-mode
     groovy-mode
     haml-mode
     helm
