@@ -22,6 +22,7 @@
 (add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Berksfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.cap$" . enh-ruby-mode))
 
 (setq enh-ruby-deep-indent-paren nil)
 
