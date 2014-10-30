@@ -84,6 +84,7 @@
     smartrep
     sql-indent
     tss
+    tuareg
     undo-tree
     vimrc-mode
     volatile-highlights
