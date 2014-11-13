@@ -2,6 +2,7 @@
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-x v g") 'magit-status)
 (global-set-key (kbd "C-c b") 'magit-blame-mode)
+(global-set-key (kbd "C-c l") 'magit-file-log)
 
 (eval-after-load "magit"
   '(progn
