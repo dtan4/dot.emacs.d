@@ -58,6 +58,7 @@
     less-css-mode
     linum
     magit
+    magit-gh-pulls
     markdown-mode
     migemo
     mmm-mode
