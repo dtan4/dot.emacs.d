@@ -9,8 +9,8 @@ task :clean do
   end
 end
 
-desc "Update submodule"
-task :update_submodule do
+desc "Update submodules"
+task :update_submodules do
   Dir["site-lisp/*/"].map { |dir| File.join(DOT_EMACS_DIR, dir[0..-1]) }.each do |dir|
     Dir.chdir(dir)
     sh %(git pull origin master)
