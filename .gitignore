@@ -9,3 +9,4 @@ var
 .woman_cache.el
 projectile-bookmarks.eld
 *.elc
+abbrev_defs
