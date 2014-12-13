@@ -10,5 +10,5 @@
      (set-face-foreground 'magit-diff-del "#d54e53")
      (set-face-background 'magit-item-highlight "#000000")))
 
-(require 'magit-gh-pulls)
-(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+;; (require 'magit-gh-pulls)
+;; (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
