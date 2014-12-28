@@ -49,6 +49,7 @@
     helm-git-grep
     helm-gtags
     helm-ls-git
+    helm-migemo
     helm-projectile
     helm-rails
     highlight-symbol
