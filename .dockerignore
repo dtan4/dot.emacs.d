@@ -1,0 +1,15 @@
+.git
+.gitignore
+.travis.yml
+ac-comphist.dat
+tramp
+url
+eshell
+el-get
+*~
+var
+.mc-lists.el
+.woman_cache.el
+projectile-bookmarks.eld
+*.elc
+abbrev_defs
