@@ -6,6 +6,7 @@ tramp
 url
 eshell
 el-get
+elisp
 *~
 var
 .mc-lists.el
