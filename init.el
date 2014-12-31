@@ -61,7 +61,6 @@
     magit
     magit-gh-pulls
     markdown-mode
-    migemo
     mmm-mode
     mode-compile
     multiple-cursors
