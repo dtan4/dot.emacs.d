@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+MAINTAINER Daisuke Fujita (dtanshi45@gmail.com) <@dtan4>
 
 RUN apt-get update && \
     apt-get install -y emacs cmigemo libmigemo-dev git && \

@@ -1,9 +1,9 @@
-[submodule "site-lisp/yatex"]
-	path = site-lisp/yatex
-	url = https://github.com/emacsmirror/yatex.git
 [submodule "site-lisp/plantuml-mode"]
 	path = site-lisp/plantuml-mode
 	url = https://github.com/zwz/plantuml-mode.git
 [submodule "site-lisp/replace-colorthemes"]
 	path = site-lisp/replace-colorthemes
 	url = https://github.com/emacs-jp/replace-colorthemes.git
+[submodule "site-lisp/yatex"]
+	path = site-lisp/yatex
+	url = https://github.com/emacsmirror/yatex.git
