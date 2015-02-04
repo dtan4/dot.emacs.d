@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Daisuke Fujita (dtanshi45@gmail.com) <@dtan4>
 
 RUN apt-get update && \
-    apt-get install -y emacs cmigemo libmigemo-dev git && \
+    apt-get install -y emacs24 cmigemo libmigemo-dev git && \
     rm -rf /var/lib/apt/lists/*
 
 COPY . /root/.emacs.d
