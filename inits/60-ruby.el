@@ -39,6 +39,7 @@
 (add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
 (add-hook 'enh-ruby-mode-hook 'rspec-mode)
+(add-hook 'enh-ruby-mode-hook '(lambda () (serverspec 1)))
 (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)

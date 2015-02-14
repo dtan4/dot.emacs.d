@@ -81,6 +81,7 @@
     ruby-end
     sass-mode
     scss-mode
+    serverspec
     slim-mode
     smartrep
     sql-indent
