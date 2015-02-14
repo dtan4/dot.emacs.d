@@ -1,9 +1,12 @@
 (setq my/hidden-minor-modes
       '(
         abbrev-mode
-        auto-complete-mode
         eldoc-mode
         magit-auto-revert-mode
+        ruby-block-mode
+        ruby-end-mode
+        rspec-mode
+        serverspec
         undo-tree-mode
         volatile-highlights-mode
         ))
