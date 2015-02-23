@@ -12,6 +12,7 @@
 (setq ruby-block-highlight-toggle t)
 (setq ruby-block-delay 0.1)
 
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.pryrc$" . enh-ruby-mode))
