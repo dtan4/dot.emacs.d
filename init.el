@@ -84,6 +84,7 @@
     slim-mode
     smartrep
     sql-indent
+    terraform-mode
     tss
     tuareg
     undo-tree
