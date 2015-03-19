@@ -15,6 +15,7 @@
   (interactive)
   (helm-do-ag (projectile-project-root)))
 (global-set-key (kbd "C-c f") 'projectile-helm-ag)
+(setq helm-ag-base-command "ag --nocolor --nogroup --hidden")
 
 (helm-descbinds-mode)
 (global-set-key (kbd "M-? b") 'describe-bindings)
