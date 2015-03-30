@@ -25,6 +25,8 @@
 (add-to-list 'auto-mode-alist '("Capfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.cap$" . enh-ruby-mode))
 
+(add-to-list 'auto-mode-alist '("\\.erb$" . rhtml-mode))
+
 (setq enh-ruby-deep-indent-paren nil)
 
 ;; Do not insert magic comment
