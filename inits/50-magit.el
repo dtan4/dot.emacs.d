@@ -10,5 +10,11 @@
      (set-face-foreground 'magit-diff-del "#d54e53")
      (set-face-background 'magit-item-highlight "#000000")))
 
+;; magit 1.4.0 or above
+(setq magit-auto-revert-mode nil)
+
+;; Suppress magit 1.4.0 instruction
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 ;; (require 'magit-gh-pulls)
 ;; (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
