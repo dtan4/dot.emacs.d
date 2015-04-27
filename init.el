@@ -28,6 +28,7 @@
     exec-path-from-shell
     expand-region
     feature-mode
+    flycheck
     flymake
     flymake-coffee
     flymake-cursor
