@@ -34,10 +34,8 @@
     flymake-cursor
     flymake-yaml
     foreign-regexp
-    fringe-helper
     gist
     gitconfig-mode
-    git-gutter-fringe
     gnuplot-mode
     go-autocomplete
     go-eldoc
