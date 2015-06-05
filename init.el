@@ -19,12 +19,8 @@
     coffee-mode
     color-moccur
     cperl-mode
-    dash-at-point
-    direx
     dockerfile-mode
     enh-ruby-mode
-    ess
-    esup
     exec-path-from-shell
     expand-region
     feature-mode
@@ -57,7 +53,6 @@
     less-css-mode
     linum
     magit
-    magit-gh-pulls
     markdown-mode
     mmm-mode
     mode-compile
@@ -69,7 +64,6 @@
     pig-mode
     popwin
     projectile-rails
-    quickrun
     rainbow-mode
     revive
     recentf-ext
