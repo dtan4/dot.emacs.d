@@ -15,6 +15,3 @@
 
 ;; Suppress magit 1.4.0 instruction
 (setq magit-last-seen-setup-instructions "1.4.0")
-
-;; (require 'magit-gh-pulls)
-;; (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
