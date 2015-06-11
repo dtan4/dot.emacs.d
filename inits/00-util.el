@@ -119,3 +119,6 @@
 (global-set-key "\C-x#" '(lambda ()
                            (interactive)
                            (split-window-horizontally-n 3)))
+
+;; Enable electric-pair-mode
+(electric-pair-mode 1)
