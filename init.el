@@ -3,6 +3,7 @@
 ;; reduce frequency of GC
 (setq gc-cons-threshold 4194304)
 
+;; http://d.hatena.ne.jp/tarao/20150221/1424518030
 (add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
