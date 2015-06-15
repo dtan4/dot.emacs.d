@@ -7,6 +7,11 @@ task :clean do
   Dir.glob("el-get/*") { |dir| rm_r dir }
 end
 
+desc "Create symlink"
+task :symlink do
+  ln_s(Dir.pwd, DOT_EMACS_DIR)
+end
+
 desc "Launch Emacs and test whether it exits successfully"
 task :test do
   # http://d.hatena.ne.jp/rubikitch/20101125/emacs
