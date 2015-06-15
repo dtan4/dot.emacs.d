@@ -3,6 +3,10 @@
 ;; reduce frequency of GC
 (setq gc-cons-threshold 4194304)
 
+;; Save abbrevs silently
+;; http://osdir.com/ml/emacs.jdee/2003-01/msg00064.html
+(setq save-abbrevs 'silently)
+
 (defvar installing-package-list
   '(
     init-loader
