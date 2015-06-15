@@ -19,5 +19,3 @@
 
 (helm-descbinds-mode)
 (global-set-key (kbd "M-? b") 'describe-bindings)
-
-(require 'all-ext)

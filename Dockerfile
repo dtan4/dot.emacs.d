@@ -8,7 +8,6 @@ RUN apt-get update && \
 COPY . /root/.emacs.d
 
 RUN cd /root/.emacs.d && \
-    mkdir elisp && \
     emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
 
 CMD ["emacs", "-nw"]
