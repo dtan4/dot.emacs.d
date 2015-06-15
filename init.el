@@ -3,114 +3,97 @@
 ;; reduce frequency of GC
 (setq gc-cons-threshold 4194304)
 
-(defvar installing-package-list
-  '(
-    init-loader
-    go-mode
-    ;;
-    ag
-    all-ext
-    anzu
-    apples-mode
-    auto-complete
-    auto-highlight-symbol
-    autoinsert
-    batch-mode
-    coffee-mode
-    color-moccur
-    cperl-mode
-    dockerfile-mode
-    enh-ruby-mode
-    exec-path-from-shell
-    expand-region
-    feature-mode
-    flycheck
-    flymake
-    flymake-coffee
-    flymake-cursor
-    flymake-yaml
-    foreign-regexp
-    gist
-    gitconfig-mode
-    gnuplot-mode
-    go-autocomplete
-    go-eldoc
-    groovy-mode
-    haml-mode
-    helm
-    helm-ag
-    helm-descbinds
-    helm-ghq
-    helm-gtags
-    helm-ls-git
-    helm-migemo
-    helm-projectile
-    helm-rails
-    highlight-symbol
-    hlinum
-    htmlize
-    ;; js2-mode
-    less-css-mode
-    linum
-    magit
-    markdown-mode
-    mmm-mode
-    mode-compile
-    multiple-cursors
-    muttrc-mode
-    nginx-mode
-    open-junk-file
-    php-mode
-    pig-mode
-    popwin
-    projectile-rails
-    rainbow-mode
-    revive
-    recentf-ext
-    rhtml-mode
-    rspec-mode
-    ruby-block
-    ruby-end
-    sass-mode
-    scss-mode
-    serverspec
-    slim-mode
-    smartrep
-    sql-indent
-    terraform-mode
-    tss
-    tuareg
-    undo-tree
-    vimrc-mode
-    volatile-highlights
-    wdired
-    web-mode
-    yaml-mode
-    zeal-at-point
-    zlc
-    ;; add package
-    ))
+(add-to-list 'load-path (locate-user-emacs-file "el-get/el-get"))
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
 
-;; initialize package.el
-(require 'package)
-(setq package-user-dir (concat user-emacs-directory "elisp"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(package-initialize)
+(el-get-bundle tarao/el-get-lock)
+(el-get-lock)
 
-;; load all elisps under ~/.emacs.d/site-lisp
-(let ((default-directory (concat user-emacs-directory "site-lisp")))
-  (add-to-list 'load-path default-directory)
-  (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
-      (normal-top-level-add-subdirs-to-load-path)))
+(el-get-bundle let-alist)
 
-(let ((not-installed (loop for x in installing-package-list
-                           when (not (package-installed-p x))
-                           collect x)))
-  (when not-installed
-    (package-refresh-contents)
-    (dolist (pkg not-installed)
-      (package-install pkg))))
+(el-get-bundle ag)
+(el-get-bundle anzu)
+(el-get-bundle apples-mode)
+(el-get-bundle auto-complete)
+(el-get-bundle auto-highlight-symbol)
+(el-get-bundle batch-mode)
+(el-get-bundle coffee-mode)
+(el-get-bundle color-moccur)
+(el-get-bundle cperl-mode)
+(el-get-bundle dockerfile-mode)
+(el-get-bundle enh-ruby-mode)
+(el-get-bundle exec-path-from-shell)
+(el-get-bundle expand-region)
+(el-get-bundle feature-mode)
+(el-get-bundle flycheck/flycheck)
+(el-get-bundle flymake)
+(el-get-bundle flymake-coffee)
+(el-get-bundle flymake-cursor)
+(el-get-bundle flymake-yaml)
+(el-get-bundle foreign-regexp)
+(el-get-bundle gitconfig-mode)
+(el-get-bundle gnuplot-mode)
+(el-get-bundle go-autocomplete)
+(el-get-bundle go-eldoc)
+(el-get-bundle go-mode)
+(el-get-bundle groovy-mode)
+(el-get-bundle haml-mode)
+(el-get-bundle helm)
+(el-get-bundle helm-ag)
+(el-get-bundle helm-descbinds)
+(el-get-bundle helm-ghq)
+(el-get-bundle helm-gtags)
+(el-get-bundle helm-ls-git)
+(el-get-bundle helm-migemo)
+(el-get-bundle helm-projectile)
+(el-get-bundle helm-rails)
+(el-get-bundle highlight-symbol)
+(el-get-bundle hlinum)
+(el-get-bundle htmlize)
+(el-get-bundle init-loader)
+(el-get-bundle json-mode)
+(el-get-bundle less-css-mode)
+(el-get-bundle magit)
+(el-get-bundle markdown-mode)
+(el-get-bundle mmm-mode)
+(el-get-bundle mode-compile)
+(el-get-bundle multiple-cursors)
+(el-get-bundle muttrc-mode)
+(el-get-bundle nginx-mode)
+(el-get-bundle open-junk-file)
+(el-get-bundle php-mode)
+(el-get-bundle pig-mode)
+(el-get-bundle popwin)
+(el-get-bundle projectile-rails)
+(el-get-bundle rainbow-mode)
+(el-get-bundle revive)
+(el-get-bundle recentf-ext)
+(el-get-bundle rhtml-mode)
+(el-get-bundle rspec-mode)
+(el-get-bundle ruby-block)
+(el-get-bundle ruby-end)
+(el-get-bundle sass-mode)
+(el-get-bundle scss-mode)
+(el-get-bundle serverspec)
+(el-get-bundle slim-mode)
+(el-get-bundle smartrep)
+(el-get-bundle sql-indent)
+(el-get-bundle terraform-mode)
+(el-get-bundle tss)
+(el-get-bundle tuareg)
+(el-get-bundle undo-tree)
+(el-get-bundle vimrc-mode)
+(el-get-bundle volatile-highlights)
+(el-get-bundle wdired)
+(el-get-bundle web-mode)
+(el-get-bundle yaml-mode)
+(el-get-bundle zeal-at-point)
+(el-get-bundle zlc)
 
 (require 'init-loader)
 ;; http://d.hatena.ne.jp/syohex/20140706/1404637327
