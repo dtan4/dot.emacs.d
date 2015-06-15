@@ -26,6 +26,7 @@
 (el-get-bundle color-moccur)
 (el-get-bundle cperl-mode)
 (el-get-bundle dockerfile-mode)
+(el-get-bundle emacs-jp/replace-colorthemes)
 ;; (el-get-bundle emacsmirror/yatex)
 (el-get-bundle enh-ruby-mode)
 (el-get-bundle exec-path-from-shell)
