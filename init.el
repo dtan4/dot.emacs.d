@@ -74,7 +74,9 @@
 (el-get-bundle popwin)
 (el-get-bundle projectile-rails)
 (el-get-bundle rainbow-mode)
-(el-get-bundle revive)
+;; 2015-06-22
+;; Error (el-get): while installing revive: Checksum verification failed. Required: "bf86576fbff406de4759fad7794f435c89f68be9", actual: "2832fdcdc9fca090a62bb10177c723ec690b4c4a".
+;; (el-get-bundle revive)
 (el-get-bundle recentf-ext)
 (el-get-bundle rhtml-mode)
 (el-get-bundle rspec-mode)
