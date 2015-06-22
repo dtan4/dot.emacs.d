@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
+      '((git-gutter :checksum "070e51cd19576c67a932c233d13a23e7ee7d5fc5")
+        (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
         (el-get :checksum "e86011cd618fcfef9adf57384b31794ed1d4b738")
         (replace-colorthemes :checksum "d23b086141019c76ea81881bda00fb385f795048")
         (flycheck :checksum "ec3fa3ce5ac007edd73ec69230bc20bb37cb6efd")
@@ -48,7 +49,6 @@
         (less-css-mode :checksum "d59a3ff4031ae75fbbe77b6cfce7843205394c28")
         (init-loader :checksum "1f28a0b801cbb08aa9b47fd15ceab243a2bc064c")
         (htmlize :checksum "aa6e2f6dba6fdfa200c7c55efe29ff63380eac8f")
-        (hlinum :checksum "fc6a2fd6bafbf64a9898476244d3bd75f749f39a")
         (linum-ex :checksum "1e0a6c7e363e8295eff4a981bc42b5656c1ca401")
         (highlight-symbol :checksum "d94b97c5f8804cd0ca1e612c3af8f37ab266321e")
         (helm-rails :checksum "31d79cd0feca11cbb1aa532a8d2112ec794de4f0")

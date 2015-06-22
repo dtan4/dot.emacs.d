@@ -17,3 +17,9 @@ task :test do
   # http://d.hatena.ne.jp/rubikitch/20101125/emacs
   sh %q(emacs -batch --eval '(setq debug-on-error t)' -l ./init.el)
 end
+
+desc "Clean up and run test"
+task :ci => [
+  "clean",
+  "test"
+]
