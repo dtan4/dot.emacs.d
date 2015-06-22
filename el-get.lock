@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
+      '((git-gutter :checksum "070e51cd19576c67a932c233d13a23e7ee7d5fc5")
+        (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
         (el-get :checksum "e86011cd618fcfef9adf57384b31794ed1d4b738")
         (replace-colorthemes :checksum "d23b086141019c76ea81881bda00fb385f795048")
         (flycheck :checksum "ec3fa3ce5ac007edd73ec69230bc20bb37cb6efd")

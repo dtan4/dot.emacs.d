@@ -40,6 +40,7 @@
 (el-get-bundle flymake-yaml)
 (el-get-bundle foreign-regexp)
 (el-get-bundle gitconfig-mode)
+(el-get-bundle git-gutter)
 (el-get-bundle gnuplot-mode)
 (el-get-bundle go-autocomplete)
 (el-get-bundle go-eldoc)
