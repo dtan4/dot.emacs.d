@@ -57,7 +57,6 @@
 (el-get-bundle helm-projectile)
 (el-get-bundle helm-rails)
 (el-get-bundle highlight-symbol)
-(el-get-bundle hlinum)
 (el-get-bundle htmlize)
 (el-get-bundle init-loader)
 (el-get-bundle json-mode)
