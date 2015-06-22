@@ -1,6 +1,6 @@
 (setq el-get-lock-package-versions
       '((el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
-        (el-get :checksum "a7db1dcfdc4828c740753e049def1199a823e64f")
+        (el-get :checksum "e86011cd618fcfef9adf57384b31794ed1d4b738")
         (replace-colorthemes :checksum "d23b086141019c76ea81881bda00fb385f795048")
         (flycheck :checksum "ec3fa3ce5ac007edd73ec69230bc20bb37cb6efd")
         (json-mode :checksum "8646af183a3300560e8dfb4568ecd47d7242f47a")
@@ -87,7 +87,7 @@
         (coffee-mode :checksum "f9bb3fbb8a34292853ba1f7bcb4cab3389eb2c44")
         (batch-mode :checksum "47cfc894ffaa4bc5b537e34aff35f62897ca7ccf")
         (auto-highlight-symbol :checksum "7cf81aa0d7e9e43f7363523057a54cdcc46e1354")
-        (auto-complete :checksum "a2a0cf787d5d1b04a6b45a3e0f9d2af29c1bfe1b")
+        (auto-complete :checksum "dd5dc3d41c5acafac3202f4213baa7c2f198772d")
         (fuzzy :checksum "f7b8f668c3d364d3b52531b9b0fc152499d010fc")
         (popup :checksum "2687612766f87acd5296a4e65696c5295287314a")
         (anzu :checksum "b486075ab478ad4a030a7fa3c97a378f33d546b4")
