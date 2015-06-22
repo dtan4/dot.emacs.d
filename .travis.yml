@@ -1,4 +1,6 @@
 language: emacs-lisp
+os:
+  - osx
 env:
   matrix:
     - EMACS=emacs24
