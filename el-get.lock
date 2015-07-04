@@ -30,7 +30,7 @@
         (rspec-mode :checksum "7d7a6bbbd8066880f72179a2bececf99aeb796a7")
         (rhtml-mode :checksum "a6d71b38a3db867ccf82999c99805db1a3a33c33")
         (recentf-ext :checksum "495bfe07e8a759f1e6dfbd45e62ae2f72404ff79")
-        (revive :checksum "bf86576fbff406de4759fad7794f435c89f68be9")
+        (revive :checksum "2832fdcdc9fca090a62bb10177c723ec690b4c4a")
         (projectile-rails :checksum "a24de9aba0abb1739832370cc662c91d427f0cfd")
         (rake :checksum "c1e686c40af4c4f77244d2820c64f7110b45bd76")
         (projectile :checksum "cc5612601f775da211c77e9171bf15937ecb054c")
