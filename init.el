@@ -15,7 +15,7 @@
 (el-get-bundle tarao/el-get-lock)
 (el-get-lock)
 
-(el-get-bundle let-alist)
+(el-get-bundle elpa:let-alist)
 
 (el-get-bundle ag)
 (el-get-bundle anzu)
