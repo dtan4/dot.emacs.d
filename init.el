@@ -61,7 +61,7 @@
 (el-get-bundle init-loader)
 (el-get-bundle json-mode)
 (el-get-bundle less-css-mode)
-(el-get-bundle magit)
+(el-get-bundle magit :branch "master")
 (el-get-bundle markdown-mode)
 (el-get-bundle mmm-mode)
 (el-get-bundle mode-compile)
