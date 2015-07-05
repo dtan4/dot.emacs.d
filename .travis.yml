@@ -4,7 +4,7 @@ env:
     - EMACS_VERSION=24.5
 before_install:
   - sudo apt-get update -qq &&
-    sudo apt-get build-dep emacs &&
+    sudo apt-get build-dep -qq emacs &&
     sudo apt-get install -qq libmagickwand-dev libselinux1-dev libgnutls-dev texinfo cmigemo libmigemo-dev
   - wget -O /tmp/emacs-$EMACS_VERSION.tar.gz http://ftp.gnu.org/gnu/emacs/emacs-$EMACS_VERSION.tar.gz &&
     cd /tmp &&
