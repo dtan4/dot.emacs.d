@@ -4,8 +4,10 @@
 (global-set-key (kbd "C-c b") 'magit-blame-mode)
 (global-set-key (kbd "C-c l") 'magit-file-log)
 
-;; magit 1.4.0 or above
-(setq magit-auto-revert-mode nil)
-
-;; Suppress magit 1.4.0 instruction
-(setq magit-last-seen-setup-instructions "1.4.0")
+(eval-after-load "magit"
+  '(progn
+     (set-face-foreground 'magit-blame-heading "cyan")
+     (set-face-foreground 'magit-blame-date "white")
+     (set-face-foreground 'magit-blame-name "green")
+     (setq magit-blame-heading-format "%-20a %C %s") ;; original: "%-20a %C %s"
+     ))
