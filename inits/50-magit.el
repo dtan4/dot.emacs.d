@@ -1,8 +1,8 @@
 (add-hook 'magit-mode-hook 'ansi-color-for-comint-mode-on)
 (global-set-key (kbd "C-c g") 'magit-status)
 (global-set-key (kbd "C-x v g") 'magit-status)
-(global-set-key (kbd "C-c b") 'magit-blame-mode)
-(global-set-key (kbd "C-c l") 'magit-file-log)
+(global-set-key (kbd "C-c b") 'magit-blame)
+(global-set-key (kbd "C-c l") 'magit-log-buffer-file)
 
 (eval-after-load "magit"
   '(progn
