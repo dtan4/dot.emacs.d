@@ -65,3 +65,4 @@
 
 ;; RSpec-mode
 (custom-set-variables '(rspec-use-rake-flag nil))
+(setq rspec-primary-source-dirs '("app"))
