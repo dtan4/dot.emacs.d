@@ -59,6 +59,7 @@
 (el-get-bundle highlight-symbol)
 (el-get-bundle htmlize)
 (el-get-bundle init-loader)
+(el-get-bundle jpellerin/emacs-crystal-mode)
 (el-get-bundle json-mode)
 (el-get-bundle less-css-mode)
 (el-get-bundle magit :branch "master")

@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((magit :checksum "7c5610a693b362de6de3035baf915c83a185ad16")
+      '((emacs-crystal-mode :checksum "ff5877baf27754d0a15f2658e736381572670ec7")
+        (magit :checksum "7c5610a693b362de6de3035baf915c83a185ad16")
         (git-gutter :checksum "0b772b26349c19a49ba071388530038cde660d23")
         (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
         (el-get :checksum "3fb990021cb646fdc964a7064036795255851f74")
