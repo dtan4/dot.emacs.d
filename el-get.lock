@@ -1,6 +1,6 @@
 (setq el-get-lock-package-versions
-      '((emacs-crystal-mode :checksum "ff5877baf27754d0a15f2658e736381572670ec7")
-        (magit :checksum "7c5610a693b362de6de3035baf915c83a185ad16")
+      '((emacs-crystal-mode :checksum "df693d2a379c113eb9d6e753d7da21935d60ec2d")
+        (magit :checksum "5c1a407c93ea85eb3b495a44910c2e08eeb959c7")
         (git-gutter :checksum "0b772b26349c19a49ba071388530038cde660d23")
         (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
         (el-get :checksum "3fb990021cb646fdc964a7064036795255851f74")
@@ -56,7 +56,7 @@
         (helm-rails :checksum "31d79cd0feca11cbb1aa532a8d2112ec794de4f0")
         (git-modes :checksum "3423997a89f63eb4c8a4ce495928bc5951767932")
         (helm-migemo :checksum "e5aed05f4ff5eabddb601f251e7531b42cf7ffb9")
-        (helm-ls-git :checksum "9b967f187677124e994b79fb42fdbe6adbdbac52")
+        (helm-ls-git :checksum "f321f5352c3ca4b0678cdead5716945290e15d4c")
         (helm-gtags :checksum "d5482dd11176895d3a14649a22ae41b1d9751450")
         (helm-ghq :checksum "d7d9cf59574ac392804235d6c257b4d0211157b7")
         (helm-descbinds :checksum "5d8e84e6c047ce8a042fdcd827abb421f4848ac7")
