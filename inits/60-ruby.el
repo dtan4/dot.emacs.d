@@ -6,12 +6,6 @@
 ;; open shebang-added file in enh-ruby-mode
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
-;; ruby-block.el
-(require 'ruby-block)
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle t)
-(setq ruby-block-delay 0.1)
-
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
@@ -38,6 +32,12 @@
 (ad-activate 'enh-ruby-mode-set-encoding)
 (setq-default enh-ruby-not-insert-magic-comment t)
 
+;; ruby-block.el
+(require 'ruby-block)
+(setq ruby-block-highlight-toggle t)
+(setq ruby-block-delay 0.1)
+
+(add-hook 'enh-ruby-mode-hook 'ruby-block-mode)
 (add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
