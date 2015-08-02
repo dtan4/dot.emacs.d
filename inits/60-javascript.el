@@ -2,6 +2,8 @@
 ;; ;; https://github.com/magnars/.emacs.d/blob/master/setup-js2-mode.el
 ;; (setq-default js2-global-externs '("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "$" "jQuery" "_" "Backbone" "dojo" "ko"))
 
+(setq js-indent-level 2)
+
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (defadvice web-mode-highlight-part (around tweak-jsx activate)
   (if (equal web-mode-content-type "jsx")
