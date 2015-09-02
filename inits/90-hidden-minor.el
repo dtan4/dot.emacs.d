@@ -9,7 +9,6 @@
         serverspec
         undo-tree-mode
         volatile-highlights-mode
-        yas-minor-mode
         ))
 
 (mapc (lambda (mode)
