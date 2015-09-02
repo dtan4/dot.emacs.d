@@ -46,6 +46,7 @@
 (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
 (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
+(add-hook 'enh-ruby-mode-hook #'yas-minor-mode)
 
 ;; http://willnet.in/13
 (defadvice enh-ruby-indent-line (after unindent-closing-paren activate)
