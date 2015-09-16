@@ -1,3 +1,13 @@
+(set-face-attribute 'powerline-active1 nil
+                    :foreground "cyan"
+                    :background "#3a3a3a"
+                    :inherit 'mode-line)
+
+(set-face-attribute 'powerline-active2 nil
+                    :foreground "green"
+                    :background "gray10"
+                    :inherit 'mode-line)
+
 (setq-default mode-line-format
               '("%e"
                 (:eval
