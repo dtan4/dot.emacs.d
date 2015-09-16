@@ -9,9 +9,9 @@
 (set-face-background 'mode-line "gray10")
 (set-face-background 'mode-line-buffer-id "green")
 (custom-set-faces
-	'(font-lock-constant-face ((t (:foreground "orange"))))
-	'(font-lock-preprocessor-face ((t (:foreground "orange"))))
-    '(default ((t (:foreground "gray70")))))
+ '(font-lock-constant-face ((t (:foreground "orange"))))
+ '(font-lock-preprocessor-face ((t (:foreground "orange"))))
+ '(default ((t (:foreground "gray70")))))
 
 ;; reset mode-line color
 (global-set-key (kbd "C-c m")
