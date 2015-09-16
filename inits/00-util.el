@@ -122,3 +122,10 @@
 
 ;; Enable electric-pair-mode
 (electric-pair-mode 1)
+
+;; Enable highlighting current line
+(global-hl-line-mode)
+(custom-set-faces
+ '(hl-line (
+            (t
+             (:background "gray10")))))
