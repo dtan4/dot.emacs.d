@@ -73,6 +73,7 @@
 (el-get-bundle php-mode)
 (el-get-bundle pig-mode)
 (el-get-bundle popwin)
+(el-get-bundle powerline)
 (el-get-bundle projectile-rails)
 (el-get-bundle rainbow-mode)
 ;; 2015-06-22
