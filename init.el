@@ -53,7 +53,6 @@
 (el-get-bundle helm-ghq)
 (el-get-bundle helm-gtags)
 (el-get-bundle helm-ls-git)
-(el-get-bundle helm-migemo)
 (el-get-bundle helm-projectile)
 (el-get-bundle helm-rails)
 (el-get-bundle highlight-symbol)
