@@ -1,17 +1,9 @@
 language: emacs-lisp
-env:
-  matrix:
-    - EMACS=emacs24
-before_install:
-  - if [ "$EMACS" = "emacs24" ]; then
-    sudo add-apt-repository -y ppa:cassou/emacs &&
-    sudo apt-get update -qq &&
-    sudo apt-get install -qq emacs24 emacs24-el texinfo cmigemo libmigemo-dev;
-    fi
-  - ln -s `pwd` ~/.emacs.d
-  - emacs --version
+sudo: required
+services:
+  - docker
 script:
-  travis_retry rake ci
+  - docker build -t quay.io/dtan4/dot.emacs.d .
 notifications:
   slack:
     secure: tchbVC+BL/kmCblzgOlr8/GBRBVbakJx34uy5cmvarLmFiv4M+/m5OdpoKMun7CR5ezLJBLPR33UNTPAc8UzhjW3yK5xD3zMIleQXvdoDiyGb8ycu1gl+lmX78sh6ExhcNbFP3JzN/89XaiNeqX4izk5zIgaZMAGTY3sAOEZ1Xc=
