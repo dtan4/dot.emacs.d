@@ -11,3 +11,5 @@
      (set-face-foreground 'magit-blame-name "green")
      (setq magit-blame-heading-format "%-20a %C %s") ;; original: "%-20a %C %s"
      ))
+
+(setq magit-push-always-verify nil)
