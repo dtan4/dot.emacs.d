@@ -89,6 +89,7 @@
 (el-get-bundle slim-mode)
 (el-get-bundle smartrep)
 (el-get-bundle sql-indent)
+(el-get-bundle syohex/emacs-hcl-mode)
 (el-get-bundle terraform-mode)
 (el-get-bundle tss)
 (el-get-bundle tuareg)
