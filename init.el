@@ -99,7 +99,7 @@
 (el-get-bundle wdired)
 (el-get-bundle web-mode)
 (el-get-bundle yaml-mode)
-(el-get-bundle yasnippet)
+(el-get-bundle yasnippet :branch "master")
 (el-get-bundle zeal-at-point)
 (el-get-bundle zlc)
 
