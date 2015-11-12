@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((emacs-hcl-mode :checksum "f9757d4122d75ffdff92c97ec9e75694506caba5")
+      '((js2-mode :checksum "48942009bcd35ff8473f3bf05bff907be288748f")
+        (emacs-hcl-mode :checksum "f9757d4122d75ffdff92c97ec9e75694506caba5")
         (powerline :checksum "e886f6fe46c7413befb1de3799a185366fd8b39c")
         (yasnippet :checksum "2f6cfef03139dbb74b0f4aeaffef0f9647bee5b8")
         (emacs-crystal-mode :checksum "a46894262b5695f13224b0af81f6bd5885a81ae5")
