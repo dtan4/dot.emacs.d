@@ -101,6 +101,7 @@
 (el-get-bundle web-mode)
 (el-get-bundle yaml-mode)
 (el-get-bundle yasnippet :branch "master")
+(el-get-bundle yatex)
 (el-get-bundle zeal-at-point)
 (el-get-bundle zlc)
 
