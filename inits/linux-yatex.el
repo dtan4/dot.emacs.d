@@ -8,7 +8,7 @@
                 ("\\.sty$" . yatex-mode)
                 ("\\.clo$" . yatex-mode)
                 ("\\.bbl$" . yatex-mode)) auto-mode-alist))
-(setq YaTeX-inhibit-prefix-letter nil)
+(setq YaTeX-inhibit-prefix-letter t) ;; C-c C-t j to compile
 (setq YaTeX-kanji-code nil)
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)

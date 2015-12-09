@@ -7,5 +7,4 @@
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
-;; (setq YaTeX-inhibit-prefix-letter t)
-(setq YaTeX-prefix (kbd "C-c t"))
+(setq YaTeX-inhibit-prefix-letter t) ;; C-c C-t j to compile
