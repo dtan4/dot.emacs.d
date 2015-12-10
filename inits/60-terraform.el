@@ -1,2 +1,2 @@
 (custom-set-variables
- '(terraform-indent-level 4))
+ '(hcl-indent-level 4))
