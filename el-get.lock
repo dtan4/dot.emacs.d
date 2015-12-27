@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((yatex :checksum "e37af485338a332839b6f04b8524f400538d1801")
+      '((migemo :checksum "c2240afa9afc0f003bb1d846710505e8e8e38169")
+        (yatex :checksum "e37af485338a332839b6f04b8524f400538d1801")
         (d-mode :checksum "d8528a41b16d1ca288df5f5c790e276f2e76ed4f")
         (js2-mode :checksum "48942009bcd35ff8473f3bf05bff907be288748f")
         (emacs-hcl-mode :checksum "f9757d4122d75ffdff92c97ec9e75694506caba5")
