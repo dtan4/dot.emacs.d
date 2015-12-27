@@ -1,6 +1,4 @@
-;; (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-;; ;; https://github.com/magnars/.emacs.d/blob/master/setup-js2-mode.el
-(setq-default js2-global-externs '("exports" "require"))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 (setq js-indent-level 2)
 
