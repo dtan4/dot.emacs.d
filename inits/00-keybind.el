@@ -24,3 +24,6 @@
 (global-set-key (kbd "C-x <up>") 'windmove-up)
 (global-set-key (kbd "C-x <right>") 'windmove-right)
 (setq windmove-wrap-around t)
+
+;; C-x s does the same to C-x C-s
+(global-set-key (kbd "C-x s") 'save-buffer)
