@@ -1,6 +1,4 @@
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
-;; (setq YaTeX-inhibit-prefix-letter t)
-(setq YaTeX-prefix (kbd "C-c t"))
 (setq auto-mode-alist
       (append '(("\\.tex$" . yatex-mode)
                 ("\\.ltx$" . yatex-mode)
