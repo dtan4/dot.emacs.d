@@ -16,6 +16,7 @@
 (el-get-lock)
 
 (el-get-bundle elpa:let-alist)
+(el-get-bundle seq)
 
 (el-get-bundle ag)
 (el-get-bundle anzu)
