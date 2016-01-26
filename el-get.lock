@@ -13,7 +13,7 @@
         (magit :checksum "c650d164a94adcd123ed28da7d413aee76cc9fe7")
         (git-gutter :checksum "cb2b341162447bc04b6f561dbb2e5add9a24c134")
         (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
-        (el-get :checksum "ec946c9b6df2565bed80ee4e940502d804d1ef10")
+        (el-get :checksum "e1c2ae1fb72a304eb71c2046fe916a7d5ac92e8d")
         (replace-colorthemes :checksum "d23b086141019c76ea81881bda00fb385f795048")
         (flycheck :checksum "1d0c64869a93f830bd8b53ac3426a6682c0ec563")
         (json-mode :checksum "ce275e004dc7265047a80dec68b24eb058b200f0")
