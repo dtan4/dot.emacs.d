@@ -3,7 +3,7 @@
       (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
 (setq tex-command "platex")
 (setq dviprint-command-format "dvipdfmx %s")
-(setq dvi2-command "open -a TeXShop")
+(setq dvi2-command "open -a Skim")
 (setq YaTeX-kanji-code 4)
 (add-hook 'yatex-mode-hook
           '(lambda ()
