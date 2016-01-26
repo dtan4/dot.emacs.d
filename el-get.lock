@@ -53,7 +53,6 @@
         (php-mode :checksum "9b1e7736ce014f26f40635af3c781127a5e32dfa")
         (open-junk-file :checksum "a5643846681c672b8f95af85b4d36349879b1aad")
         (nginx-mode :checksum "8a296e30b01adbc40d1aa9ccde369a972ac5ceab")
-        (muttrc-mode :checksum "fb1888177ea3c53b933fbdee021e0238a6babbbe")
         (multiple-cursors :checksum "a393384b3508e7d8d721e66d2bfb97fa7153dd4f")
         (mmm-mode :checksum "c9a857a638701482931ffaaee262b61ce53489f3")
         (markdown-mode :checksum "5a83366cc8e33f4a50f6283fb2cd0c3519d8577a")
