@@ -2,7 +2,7 @@ FROM quay.io/dtan4/emacs:latest
 MAINTAINER Daisuke Fujita (dtanshi45@gmail.com) <@dtan4>
 
 RUN apt-get update && \
-    apt-get install -y autoconf cmigemo git install-info libmigemo-dev texinfo && \
+    apt-get install -y autoconf cmigemo git install-info libmigemo-dev mercurial texinfo && \
     rm -rf /var/lib/apt/lists/*
 
 COPY el-get.lock /home/app/.emacs.d/
