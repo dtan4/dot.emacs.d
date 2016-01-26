@@ -20,7 +20,6 @@
         (json-reformat :checksum "b9bd375ec1deb10d2ba09c409bdcf99c56d7a716")
         (json-snatcher :checksum "c4cecc0a5051bd364373aa499c47a1bb7a5ac51c")
         (zlc :checksum "37159a4435f1a63b18d4af62b592ce3930c8b24d")
-        (zeal-at-point :checksum "a920cb48949eef708c2f10acf03d0f0e7b5c6057")
         (yaml-mode :checksum "210b0759deec33605248af9b315c0e9af4a5c0bc")
         (web-mode :checksum "add171592282cb991979d0f8ae46abfb58dccb25")
         (wdired :checksum "43af756b0dcded78251baaaeac48cc40a11f6c03")
