@@ -69,7 +69,6 @@
 (el-get-bundle mmm-mode)
 ;; (el-get-bundle mode-compile)
 (el-get-bundle multiple-cursors)
-(el-get-bundle muttrc-mode)
 (el-get-bundle nginx-mode)
 (el-get-bundle open-junk-file)
 (el-get-bundle php-mode)
