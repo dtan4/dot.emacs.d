@@ -8,3 +8,9 @@
 (setq web-mode-markup-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
 (setq web-mode-code-indent-offset 2)
+
+;; Do not indent with paste
+;; http://blog.shibayu36.org/entry/2016/03/17/183209
+(add-hook 'web-mode-hook
+          '(lambda ()
+             (setq web-mode-enable-auto-indentation nil)))
