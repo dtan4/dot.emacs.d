@@ -1,5 +1,7 @@
 (setq el-get-lock-package-versions
-      '((emacs-async :checksum "6872743af831f121e433a0eef098b42762b46739")
+      '((magit :checksum "3be90fb87e18f705b30d9ec81ac128bf23eb63a3")
+        (hcl-mode :checksum "cc13180e3af748d53c4a1d433ce2edf99bf68a7d")
+        (emacs-async :checksum "6872743af831f121e433a0eef098b42762b46739")
         (with-editor :checksum "d28d07497f67fea4c62fe7a2d3201fd86fb64fe2")
         (helm-projectile :checksum "87476ab9f5113d6c4e5de9920911b951b4092c19")
         (seq :checksum "0bfd9873323910170c6754e7e8a2e59ef0b0579d")
@@ -12,7 +14,6 @@
         (powerline :checksum "b0793ac11cdd6de17848ac654d61b1255416789e")
         (yasnippet :checksum "4af9fc98155eff79797302eb587c68079fa56149")
         (emacs-crystal-mode :checksum "a46894262b5695f13224b0af81f6bd5885a81ae5")
-        (magit :checksum "f9dda76193e8bc46c0d3f03493a3f616c5ead810")
         (git-gutter :checksum "4d4a10c32360712b5806892502af634ecebfacb4")
         (el-get-lock :checksum "046ffb568c6964ea30813338234aea2d60a5c632")
         (el-get :checksum "ee3105dfe4d23101689aeecf6f31bbfc7623fd21")

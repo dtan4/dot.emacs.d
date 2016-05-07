@@ -63,7 +63,7 @@
 (el-get-bundle js2-mode)
 (el-get-bundle json-mode)
 (el-get-bundle less-css-mode)
-(el-get-bundle magit :type github :checkout "f9dda76193e8bc46c0d3f03493a3f616c5ead810")
+(el-get-bundle magit :type github :checkout "2e6dcf8fe8672dca67e59a72975c2d850ce9bc16") ;; v2.6.2
 (el-get-bundle markdown-mode)
 (el-get-bundle migemo)
 (el-get-bundle mmm-mode)
