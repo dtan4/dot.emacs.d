@@ -54,7 +54,6 @@
         (inf-ruby :checksum "e91b349e4f80fd5ce7609c81cd05e7b3ebef2146")
         (popwin :checksum "95dea14c60019d6cccf9a3b33e0dec4e1f22c304")
         (php-mode :checksum "9b32f4caaeb22d7cc32c5dd64c1a99507d56141e")
-        (open-junk-file :checksum "a5643846681c672b8f95af85b4d36349879b1aad")
         (nginx-mode :checksum "8a296e30b01adbc40d1aa9ccde369a972ac5ceab")
         (multiple-cursors :checksum "8297f1f210f263fd96dfc28e9fb43522fd102c23")
         (mmm-mode :checksum "c9a857a638701482931ffaaee262b61ce53489f3")
