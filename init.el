@@ -26,6 +26,7 @@
 ;; (el-get-bundle batch-mode)
 (el-get-bundle coffee-mode)
 (el-get-bundle color-moccur)
+(el-get-bundle company-mode)
 ;; (el-get-bundle cperl-mode)
 (el-get-bundle dockerfile-mode)
 (el-get-bundle emacs-jp/replace-colorthemes)
