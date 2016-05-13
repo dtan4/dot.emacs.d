@@ -1,12 +1,6 @@
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . web-mode))
 
 (setq js-indent-level 2)
-
-;; http://blog.kyanny.me/entry/2015/02/28/001429
-(defun my-js-mode-hook ()
-  (setq-local electric-layout-rules
-              '((?\{ . after) (?\} . before))))
-(add-hook 'js-mode-hook 'my-js-mode-hook)
 
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (defadvice web-mode-highlight-part (around tweak-jsx activate)
