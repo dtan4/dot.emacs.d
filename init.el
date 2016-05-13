@@ -86,7 +86,6 @@
 (el-get-bundle ruby-end)
 (el-get-bundle sass-mode)
 (el-get-bundle scss-mode)
-(el-get-bundle serverspec)
 (el-get-bundle slim-mode)
 (el-get-bundle smartrep)
 ;; (el-get-bundle sql-indent)

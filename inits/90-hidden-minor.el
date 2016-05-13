@@ -6,7 +6,6 @@
         ruby-block-mode
         ruby-end-mode
         rspec-mode
-        serverspec
         undo-tree-mode
         volatile-highlights-mode
         ))
