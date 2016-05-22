@@ -27,3 +27,6 @@
 
 ;; C-x s does the same to C-x C-s
 (global-set-key (kbd "C-x s") 'save-buffer)
+
+;; M-x align-regexp =
+(global-set-key (kbd "C-x \\") 'align-regexp)
