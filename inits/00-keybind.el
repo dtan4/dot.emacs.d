@@ -27,3 +27,6 @@
 
 ;; C-x s does the same to C-x C-s
 (global-set-key (kbd "C-x s") 'save-buffer)
+
+;; Disable IME switch by C-\
+(global-set-key (kbd "C-\\") nil)
