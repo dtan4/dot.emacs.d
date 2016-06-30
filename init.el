@@ -58,6 +58,7 @@
 (el-get-bundle helm-rails)
 (el-get-bundle highlight-symbol)
 (el-get-bundle htmlize)
+(el-get-bundle indent-guide)
 (el-get-bundle init-loader)
 (el-get-bundle jpellerin/emacs-crystal-mode)
 (el-get-bundle js2-mode)
