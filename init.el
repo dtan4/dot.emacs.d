@@ -12,7 +12,7 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(el-get-bundle tarao/el-get-lock)
+(el-get-bundle tarao/el-get-lock :checkout "5a6c7d4eddaaf1402e9344e30628a3e57affeb54")
 (el-get-lock)
 
 (el-get-bundle elpa:let-alist)
@@ -45,7 +45,7 @@
 (el-get-bundle git-gutter)
 (el-get-bundle gnuplot-mode)
 (el-get-bundle go-eldoc)
-(el-get-bundle go-mode)
+(el-get-bundle go-mode :checkout "v1.4.0")
 (el-get-bundle groovy-mode)
 (el-get-bundle haml-mode)
 (el-get-bundle helm)
@@ -64,7 +64,7 @@
 (el-get-bundle js2-mode)
 (el-get-bundle json-mode)
 (el-get-bundle less-css-mode)
-(el-get-bundle magit :type github :checkout "2e6dcf8fe8672dca67e59a72975c2d850ce9bc16") ;; v2.6.2
+(el-get-bundle magit :type github :checkout "2.7.0")
 (el-get-bundle markdown-mode)
 (el-get-bundle migemo)
 (el-get-bundle mmm-mode)
