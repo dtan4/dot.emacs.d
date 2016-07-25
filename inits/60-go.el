@@ -8,5 +8,12 @@
                           ))
 
 (add-hook 'before-save-hook 'gofmt-before-save)
+
 (add-hook 'go-mode-hook 'flycheck-mode)
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-gometalinter-setup))
+
 (add-hook 'go-mode-hook 'go-eldoc-setup)
+
+(setq flycheck-gometalinter-vendor t)
+(setq flycheck-gometalinter-fast t)

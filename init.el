@@ -36,6 +36,7 @@
 (el-get-bundle expand-region)
 (el-get-bundle feature-mode)
 (el-get-bundle flycheck/flycheck)
+(el-get-bundle flycheck-gometalinter)
 (el-get-bundle flymake)
 (el-get-bundle flymake-coffee)
 (el-get-bundle flymake-cursor)

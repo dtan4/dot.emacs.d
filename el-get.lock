@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((indent-guide :checksum "feb207cb5610f351c7cdcf266e0c99117b2f786c")
+      '((flycheck-gometalinter :checksum "2e863429cc953cf4c14783e249df56d1ae669868")
+        (indent-guide :checksum "feb207cb5610f351c7cdcf266e0c99117b2f786c")
         (protobuf-mode :checksum "c43358d4b5a8f49c743c875c2abeebbb1793c62b")
         (company-mode :checksum "2d9bf1e9ce40c7670a39fce8ee7d0ffe1ff2fbc7")
         (magit :checksum "bfc6f6d88619221506e246390e5fbb39087564ec")
