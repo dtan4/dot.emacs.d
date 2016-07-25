@@ -1,11 +1,12 @@
 (add-hook 'go-mode-hook (lambda ()
                           (set (make-local-variable 'company-backends) '(company-go))
-                          (company-mode)))
-
-(add-hook 'before-save-hook 'gofmt-before-save)
-(add-hook 'go-mode-hook (lambda ()
+                          (company-mode)
+                          (indent-guide-mode -1)
                           (local-set-key (kbd "M-.") 'godef-jump)
                           (local-set-key (kbd "M-,") 'pop-tag-mark)
-                          (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)))
+                          (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)
+                          ))
+
+(add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook 'go-mode-hook 'flycheck-mode)
 (add-hook 'go-mode-hook 'go-eldoc-setup)
