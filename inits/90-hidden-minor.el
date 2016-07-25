@@ -1,7 +1,9 @@
 (setq my/hidden-minor-modes
       '(
         abbrev-mode
+        company-mode
         eldoc-mode
+        git-gutter-mode
         magit-auto-revert-mode
         ruby-block-mode
         ruby-end-mode
