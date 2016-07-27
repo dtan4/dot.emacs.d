@@ -16,4 +16,5 @@
 (add-hook 'go-mode-hook 'go-eldoc-setup)
 
 (setq flycheck-gometalinter-vendor t)
-(setq flycheck-gometalinter-fast t)
+(setq flycheck-gometalinter-disable-all t)
+(setq flycheck-gometalinter-enable-linters '("golint" "varcheck" "vet"))
