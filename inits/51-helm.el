@@ -18,6 +18,3 @@
 (setq helm-ag-base-command "ag --nocolor --nogroup --hidden")
 
 (add-to-list 'projectile-globally-ignored-directories "Godeps")
-
-(helm-descbinds-mode)
-(global-set-key (kbd "M-? b") 'describe-bindings)
