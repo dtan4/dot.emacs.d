@@ -1,6 +1,6 @@
 DOT_EMACS_DIR = File.join(ENV["HOME"], ".emacs.d")
 
-task default: %w(clean test)
+task default: %w(test)
 
 desc "Clean up installed packages"
 task :clean do
