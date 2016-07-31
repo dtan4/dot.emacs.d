@@ -10,7 +10,6 @@
         (with-editor :checksum "d28d07497f67fea4c62fe7a2d3201fd86fb64fe2")
         (helm-projectile :checksum "228c57e80569e5aa144b4d81d09c41afb0131bb3")
         (auto-highlight-symbol :checksum "26573de912d760e04321b350897aea70958cee8b")
-        (migemo :checksum "c2240afa9afc0f003bb1d846710505e8e8e38169")
         (yatex :checksum "e37af485338a332839b6f04b8524f400538d1801")
         (d-mode :checksum "d8528a41b16d1ca288df5f5c790e276f2e76ed4f")
         (emacs-hcl-mode :checksum "cc13180e3af748d53c4a1d433ce2edf99bf68a7d")
