@@ -62,7 +62,17 @@
 (el-get-bundle jpellerin/emacs-crystal-mode)
 (el-get-bundle json-mode)
 (el-get-bundle less-css-mode)
-(el-get-bundle magit/magit :type github :checkout "2.7.0")
+(el-get-bundle magit/magit
+  :type github
+  :checkout "2.7.0"
+  :load-path "lisp/"
+  :compile "lisp/"
+  :build `(("make" ,(format "EMACSBIN=%s" el-get-emacs) "docs")
+           ("touch" "lisp/magit-autoloads.el"))
+  :build/berkeley-unix `(("gmake" ,(format "EMACSBIN=%s" el-get-emacs) "docs")
+                         ("touch" "lisp/magit-autoloads.el"))
+  :build/windows-nt (with-temp-file "lisp/magit-autoloads.el" nil)
+  )
 (el-get-bundle markdown-mode)
 (el-get-bundle mmm-mode)
 (el-get-bundle multiple-cursors)
