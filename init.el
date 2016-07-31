@@ -22,8 +22,6 @@
 (el-get-bundle tarao/el-get-lock :checkout "5a6c7d4eddaaf1402e9344e30628a3e57affeb54")
 (el-get-lock)
 
-(el-get-bundle elpa:let-alist)
-
 (el-get-bundle ag)
 (el-get-bundle anzu)
 (el-get-bundle auto-highlight-symbol)
