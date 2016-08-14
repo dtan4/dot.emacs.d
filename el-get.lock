@@ -1,8 +1,8 @@
 (setq el-get-lock-package-versions
-      '((groovy-emacs-modes :checksum "9d42f284b3163215484e16bef1785456d2e7b68d")
+      '((seq :checksum "0bfd9873323910170c6754e7e8a2e59ef0b0579d")
+        (groovy-emacs-modes :checksum "9d42f284b3163215484e16bef1785456d2e7b68d")
         (flycheck-gometalinter :checksum "2e863429cc953cf4c14783e249df56d1ae669868")
         (indent-guide :checksum "feb207cb5610f351c7cdcf266e0c99117b2f786c")
-        (protobuf-mode :checksum "c43358d4b5a8f49c743c875c2abeebbb1793c62b")
         (company-mode :checksum "e6689ea1f54920fbca283203cc5e9f3c678280bd")
         (magit :checksum "bfc6f6d88619221506e246390e5fbb39087564ec")
         (hcl-mode :checksum "2e3fa6fbc793a3bcf260fc269c5218cb09ca45aa")

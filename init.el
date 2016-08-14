@@ -78,7 +78,6 @@
 (el-get-bundle php-mode)
 (el-get-bundle popwin)
 (el-get-bundle powerline)
-(el-get-bundle protobuf-mode)
 ;; (el-get-bundle rainbow-mode)
 (el-get-bundle recentf-ext)
 (el-get-bundle rhtml-mode)
