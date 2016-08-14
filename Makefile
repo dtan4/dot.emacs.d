@@ -3,6 +3,7 @@
 .PHONY: clean
 clean:
 	rm -rf el-get/*
+	rm -rf elpa/*
 
 .PHONY: install
 install:
