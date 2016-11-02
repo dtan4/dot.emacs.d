@@ -90,6 +90,7 @@
 (el-get-bundle smartrep)
 (el-get-bundle syohex/emacs-hcl-mode)
 (el-get-bundle terraform-mode)
+(el-get-bundle toml-mode)
 (el-get-bundle undo-tree)
 (el-get-bundle vimrc-mode)
 (el-get-bundle volatile-highlights)
