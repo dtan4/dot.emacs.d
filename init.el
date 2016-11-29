@@ -22,6 +22,11 @@
 (el-get-bundle tarao/el-get-lock :checkout "5a6c7d4eddaaf1402e9344e30628a3e57affeb54")
 (el-get-lock)
 
+;; Enable environment variables for all package installations
+(el-get-bundle exec-path-from-shell)
+(let ((envs '("PATH" "GOPATH")))
+  (exec-path-from-shell-copy-envs envs))
+
 (el-get-bundle ag)
 (el-get-bundle anzu)
 (el-get-bundle auto-highlight-symbol)
@@ -31,7 +36,6 @@
 (el-get-bundle dockerfile-mode)
 (el-get-bundle emacs-jp/replace-colorthemes)
 (el-get-bundle enh-ruby-mode)
-(el-get-bundle exec-path-from-shell)
 (el-get-bundle expand-region)
 (el-get-bundle feature-mode)
 (el-get-bundle flycheck/flycheck)
