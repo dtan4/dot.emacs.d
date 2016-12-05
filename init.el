@@ -25,6 +25,7 @@
 ;; Enable environment variables for all package installations
 (el-get-bundle exec-path-from-shell)
 (let ((envs '("PATH" "GOPATH")))
+  (exec-path-from-shell-initialize)
   (exec-path-from-shell-copy-envs envs))
 
 (el-get-bundle ag)
