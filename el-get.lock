@@ -69,7 +69,7 @@
         (helm-gtags :checksum "76c573d2c0bd277041d917c9968b180d48a0fdce")
         (helm-ghq :checksum "21ccdb537a3be3d9351e01c6365df8e804e8bc56")
         (helm-ag :checksum "7a687f97e0ae7cb4cc4520aee9c97f84f2088ed9")
-        (helm :checksum "e679393efc1fcb57c67892025a442ee0b396d8dc")
+        (helm :checksum "2fca3400574e5f2666c942c674ce0f8e6ca6b232")
         (haml-mode :checksum "7717db6fa4a90d618b4a5e3fef2ac1d24ce39be3")
         (go-eldoc :checksum "ecf71a75ccfac7f9bc6fac64ef536f2ffb56b3bf")
         (go-mode :checksum "9d94107fae1b1137fb46f8cd7efc7e28f3abf2cb")

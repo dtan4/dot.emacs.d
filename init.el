@@ -52,7 +52,7 @@
 (el-get-bundle go-mode :checkout "v1.4.0")
 (el-get-bundle Groovy-Emacs-Modes/groovy-emacs-modes :type github)
 (el-get-bundle haml-mode)
-(el-get-bundle helm :checkout "v1.9.8")
+(el-get-bundle helm :checkout "v2.3.3")
 (el-get-bundle helm-ag)
 (el-get-bundle helm-ghq)
 (el-get-bundle helm-gtags)
