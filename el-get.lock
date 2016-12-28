@@ -44,7 +44,6 @@
         (ruby-block :checksum "289c34dca6daa1a1591537e1c56b687c14631930")
         (rspec-mode :checksum "9e254cef81dc5533739efab2d81a575df0334629")
         (rhtml-mode :checksum "a6d71b38a3db867ccf82999c99805db1a3a33c33")
-        (recentf-ext :checksum "495bfe07e8a759f1e6dfbd45e62ae2f72404ff79")
         (revive :checksum "2832fdcdc9fca090a62bb10177c723ec690b4c4a")
         (rake :checksum "eba311a8f5ccfb6535efbc26fa58c43e3f1e5515")
         (projectile :checksum "967645f8c719d43ef983cfce630202dbbc9b8c8a")
