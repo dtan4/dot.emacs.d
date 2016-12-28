@@ -71,7 +71,7 @@
         (helm :checksum "2fca3400574e5f2666c942c674ce0f8e6ca6b232")
         (haml-mode :checksum "7717db6fa4a90d618b4a5e3fef2ac1d24ce39be3")
         (go-eldoc :checksum "ecf71a75ccfac7f9bc6fac64ef536f2ffb56b3bf")
-        (go-mode :checksum "9d94107fae1b1137fb46f8cd7efc7e28f3abf2cb")
+        (go-mode :checksum "259110bfd7acb62196b09487d0883429b444bf1b")
         (gnuplot-mode :checksum "21f9046e3f5caad41b750b5c9cee02fa4fd20fb9")
         (gh :checksum "9f7045eec60e0b852d984bd40ebcff1e5cff9709")
         (request :checksum "adf7de452f9914406bfb693541f1d280093c4efd")

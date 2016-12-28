@@ -24,8 +24,9 @@
 
 ;; Enable environment variables for all package installations
 (el-get-bundle exec-path-from-shell)
-(let ((envs '("PATH" "GOPATH")))
+(let ((envs '("PATH" "GOPATH" "GOROOT")))
   (exec-path-from-shell-initialize)
+  (setq exec-path-from-shell-check-startup-files nil)
   (exec-path-from-shell-copy-envs envs))
 
 (el-get-bundle ag)
@@ -49,7 +50,7 @@
 (el-get-bundle gnuplot-mode)
 (el-get-bundle go-company)
 (el-get-bundle go-eldoc)
-(el-get-bundle go-mode :checkout "v1.4.0")
+(el-get-bundle go-mode :branch "master")
 (el-get-bundle Groovy-Emacs-Modes/groovy-emacs-modes :type github)
 (el-get-bundle haml-mode)
 (el-get-bundle helm :checkout "v2.3.3")
