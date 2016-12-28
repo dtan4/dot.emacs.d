@@ -14,3 +14,5 @@
      ))
 
 (setq magit-push-always-verify nil)
+
+(setq magit-auto-revert-mode nil)
