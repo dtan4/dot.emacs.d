@@ -89,6 +89,7 @@
 (el-get-bundle rspec-mode)
 (el-get-bundle ruby-block)
 (el-get-bundle ruby-end)
+(el-get-bundle rust-mode)
 (el-get-bundle sass-mode)
 (el-get-bundle scss-mode)
 (el-get-bundle slim-mode)

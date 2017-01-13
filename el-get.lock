@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((toml-mode :checksum "0bbf0618fde844cd2e12765c8ca566df09066445")
+      '((rust-mode :checksum "c091852fbda25c62095513753b44d3fcaf8eb340")
+        (toml-mode :checksum "0bbf0618fde844cd2e12765c8ca566df09066445")
         (s :checksum "fc395c8d5e6c14d5e0920ab80d4d5df007eed14a")
         (groovy-emacs-modes :checksum "5dc1e6a43727b8170f828b48fbbc52aad152de46")
         (flycheck-gometalinter :checksum "33cc9c2d7101e0448e5e49e23487c50df163f7db")
