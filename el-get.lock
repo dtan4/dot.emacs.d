@@ -6,7 +6,7 @@
         (flycheck-gometalinter :checksum "33cc9c2d7101e0448e5e49e23487c50df163f7db")
         (indent-guide :checksum "69e1cd78f7379ff3f2c3d2a9f31610ace645bad7")
         (company-mode :checksum "f2327bc7f303fcf83c3d8f9c76f61deaa110ebb5")
-        (magit :checksum "acb8efe770b55ae23f24cf8d2dc4e62bc37c1b88")
+        (magit :checksum "9cc74bfc9804918d1b296424bc0fb0aca6d65a59")
         (hcl-mode :checksum "4ce807c57c755b1eb15e17e35f2680c86595c171")
         (emacs-async :checksum "82428780ec96e18ae801783f8d7388749fafd5fa")
         (with-editor :checksum "b2d9d6b38cbb3993d4c100b098fc7efc9274b9b4")
