@@ -103,7 +103,6 @@
 (el-get-bundle web-mode)
 (el-get-bundle yaml-mode)
 (el-get-bundle yasnippet :branch "master")
-(el-get-bundle yatex)
 (el-get-bundle zlc)
 
 (require 'init-loader)
