@@ -68,7 +68,7 @@
 (el-get-bundle less-css-mode)
 (el-get-bundle magit/magit
   :type github
-  :checkout "2.10.0"
+  :checkout "2.10.2"
   :load-path "lisp/"
   :compile "lisp/"
   :build `(("make" ,(format "EMACSBIN=%s" el-get-emacs) "docs")
