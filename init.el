@@ -37,7 +37,7 @@
 (el-get-bundle company-mode)
 (el-get-bundle dockerfile-mode)
 (el-get-bundle emacs-jp/replace-colorthemes)
-(el-get-bundle enh-ruby-mode)
+(el-get-bundle enh-ruby-mode :checkout "v20170417")
 (el-get-bundle expand-region)
 (el-get-bundle feature-mode)
 (el-get-bundle flycheck/flycheck)
@@ -50,10 +50,10 @@
 (el-get-bundle gnuplot-mode)
 (el-get-bundle go-company)
 (el-get-bundle go-eldoc)
-(el-get-bundle go-mode :branch "master")
+(el-get-bundle go-mode :checkout "v1.5.0")
 (el-get-bundle Groovy-Emacs-Modes/groovy-emacs-modes :type github)
 (el-get-bundle haml-mode)
-(el-get-bundle helm :checkout "v2.3.3")
+(el-get-bundle helm :checkout "v2.6.1")
 (el-get-bundle helm-ag)
 (el-get-bundle helm-ghq)
 (el-get-bundle helm-gtags)
@@ -68,7 +68,7 @@
 (el-get-bundle less-css-mode)
 (el-get-bundle magit/magit
   :type github
-  :checkout "2.10.2"
+  :checkout "2.10.3"
   :load-path "lisp/"
   :compile "lisp/"
   :build `(("make" ,(format "EMACSBIN=%s" el-get-emacs) "docs")
