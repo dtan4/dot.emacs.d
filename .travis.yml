@@ -1,9 +1,19 @@
 language: emacs-lisp
-sudo: required
-services:
-  - docker
+sudo: false
+env:
+  - EMACS_VERSION=25.1
+  - EMACS_VERSION=25.2
+before_install:
+  # Configure $PATH: Executables are installed to $HOME/bin
+  - export PATH="$HOME/bin:$PATH"
+  # Download the makefile to emacs-travis.mk
+  - wget 'https://raw.githubusercontent.com/flycheck/emacs-travis/master/emacs-travis.mk'
+  # Install Emacs (according to $EMACS_VERSION) and Cask
+  - make -f emacs-travis.mk install_emacs
+  # Install Texinfo, if you need to build info manuals for your project
+  - make -f emacs-travis.mk install_texinfo
 script:
-  - docker build -t quay.io/dtan4/dot.emacs.d .
+	- make
 notifications:
   slack:
     secure: tchbVC+BL/kmCblzgOlr8/GBRBVbakJx34uy5cmvarLmFiv4M+/m5OdpoKMun7CR5ezLJBLPR33UNTPAc8UzhjW3yK5xD3zMIleQXvdoDiyGb8ycu1gl+lmX78sh6ExhcNbFP3JzN/89XaiNeqX4izk5zIgaZMAGTY3sAOEZ1Xc=
