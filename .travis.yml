@@ -16,7 +16,7 @@ before_install:
 install:
   - make
 before_script:
-  - ln -sf $TRAVIS_BUILD_DIR ~/.emacs.d
+  - make symlink
   - ls -al ~/.emacs.d
 script:
   - make integration-test
