@@ -13,7 +13,7 @@ before_install:
   # Install Texinfo, if you need to build info manuals for your project
   - make -f emacs-travis.mk install_texinfo
 script:
-	- make
+  - make
 notifications:
   slack:
     secure: tchbVC+BL/kmCblzgOlr8/GBRBVbakJx34uy5cmvarLmFiv4M+/m5OdpoKMun7CR5ezLJBLPR33UNTPAc8UzhjW3yK5xD3zMIleQXvdoDiyGb8ycu1gl+lmX78sh6ExhcNbFP3JzN/89XaiNeqX4izk5zIgaZMAGTY3sAOEZ1Xc=
