@@ -12,12 +12,15 @@ endif
 
 .PHONY: clean
 clean:
-	rm -rf el-get/*
-	rm -rf elpa/*
+ifeq ($(shell uname),Darwin)
+	rm -rf .cask/elpa
+else
+	rm -rf $$HOME/.cask/elpa
+endif
 
 .PHONY: install
-install:
-	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
+install: cask
+	cask install --verbose
 
 .PHONY: symlink
 symlink:
