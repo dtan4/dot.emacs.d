@@ -9,6 +9,7 @@
 (depends-on "coffee-mode")
 (depends-on "color-moccur")
 (depends-on "company")
+(depends-on "company-go")
 (depends-on "dockerfile-mode")
 (depends-on "replace-colorthemes" :git "https://github.com/emacs-jp/replace-colorthemes.git")
 (depends-on "enh-ruby-mode" "v20170417")
