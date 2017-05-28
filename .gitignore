@@ -11,3 +11,5 @@ projectile-bookmarks.eld
 *.elc
 abbrev_defs
 recentf
+
+/.cask

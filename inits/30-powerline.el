@@ -1,3 +1,5 @@
+(require 'powerline)
+
 (set-face-attribute 'powerline-active1 nil
                     :foreground "cyan"
                     :background "#303030"
