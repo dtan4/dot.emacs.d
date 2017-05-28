@@ -15,6 +15,8 @@ before_install:
   - make -f emacs-travis.mk install_texinfo
 install:
   - make
+before_script:
+  - ln -sf $PWD ~/.emacs.d
 script:
   - make integration-test
 notifications:
