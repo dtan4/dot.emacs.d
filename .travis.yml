@@ -17,6 +17,7 @@ install:
   - make
 before_script:
   - ln -sf $TRAVIS_BUILD_DIR ~/.emacs.d
+  - ls -al ~/.emacs.d
 script:
   - make integration-test
 notifications:
