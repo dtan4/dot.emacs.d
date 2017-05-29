@@ -13,6 +13,7 @@
 (depends-on "dockerfile-mode")
 (depends-on "replace-colorthemes" :git "https://github.com/emacs-jp/replace-colorthemes.git")
 (depends-on "enh-ruby-mode" "v20170417")
+(depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "feature-mode")
 (depends-on "flycheck")
