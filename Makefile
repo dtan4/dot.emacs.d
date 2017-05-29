@@ -22,6 +22,10 @@ endif
 install: cask
 	cask install --verbose
 
+.PHONY: integration-test
+integration-test:
+	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
+
 .PHONY: symlink
 symlink:
 	if [ ! -e $(HOME)/.emacs.d ]; then \

@@ -7,7 +7,7 @@
 
 (if (eq system-type 'darwin)
     (require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
-  (require 'cask (locate-user-emacs-file ".cask/cask.el")))
+  (require 'cask "~/.cask/cask.el"))
 (cask-initialize)
 
 ;; reduce frequency of GC
