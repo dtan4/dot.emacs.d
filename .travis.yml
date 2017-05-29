@@ -4,6 +4,7 @@ env:
   - EMACS_VERSION=25.1
   - EMACS_VERSION=25.2
 before_install:
+  - make symlink
   # Configure $PATH: Executables are installed to $HOME/bin
   - export PATH="$HOME/bin:$PATH"
   # Download the makefile to emacs-travis.mk
@@ -16,7 +17,6 @@ before_install:
 install:
   - make
 before_script:
-  - make symlink
   - ls -al ~/.emacs.d
 script:
   - make integration-test
