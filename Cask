@@ -42,6 +42,8 @@
 (depends-on "magit" "2.10.3")
 (depends-on "markdown-mode")
 (depends-on "mmm-mode")
+(depends-on "mozc")
+(depends-on "mozc-im")
 (depends-on "multiple-cursors")
 (depends-on "nginx-mode")
 (depends-on "php-mode")
