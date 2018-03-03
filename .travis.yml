@@ -1,5 +1,6 @@
 language: emacs-lisp
-sudo: false
+# https://github.com/travis-ci/travis-ci/issues/9073#issuecomment-358701996
+sudo: required
 env:
   - EMACS_VERSION=25.1
   - EMACS_VERSION=25.2
@@ -9,13 +10,10 @@ before_install:
   - export PATH="$HOME/bin:$PATH"
   # Download the makefile to emacs-travis.mk
   - wget 'https://raw.githubusercontent.com/flycheck/emacs-travis/master/emacs-travis.mk'
-  # Install Emacs (according to $EMACS_VERSION) and Cask
+  # Install Emacs (according to $EMACS_VERSION)
   - make -f emacs-travis.mk install_emacs
-  - make -f emacs-travis.mk install_cask
   # Install Texinfo, if you need to build info manuals for your project
   - make -f emacs-travis.mk install_texinfo
-install:
-  - make
 before_script:
   - ls -al ~/.emacs.d
 script:
