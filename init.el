@@ -87,6 +87,10 @@
   (unless (package-installed-p pkg)
     (package-install pkg)))
 
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
+
 ;; Enable environment variables for all package installations
 (let ((envs '("PATH" "GOPATH" "GOROOT")))
   (exec-path-from-shell-initialize)
