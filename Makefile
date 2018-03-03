@@ -2,7 +2,7 @@
 
 .PHONY: clean
 clean:
-	echo "nothing to clean"
+	rm -rf elpa
 
 .PHONY: install
 install:
