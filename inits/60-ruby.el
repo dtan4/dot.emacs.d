@@ -32,12 +32,6 @@
 (ad-activate 'enh-ruby-mode-set-encoding)
 (setq-default enh-ruby-not-insert-magic-comment t)
 
-;; ruby-block.el
-(require 'ruby-block)
-(setq ruby-block-highlight-toggle t)
-(setq ruby-block-delay 0.1)
-
-(add-hook 'enh-ruby-mode-hook 'ruby-block-mode)
 (add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 (add-hook 'enh-ruby-mode-hook 'auto-highlight-symbol-mode)
 (add-hook 'enh-ruby-mode-hook 'rspec-mode)
