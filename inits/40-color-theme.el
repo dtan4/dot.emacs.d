@@ -1,7 +1,5 @@
 ;; Color theme
 (cond ((not (null window-system))
-       (add-to-list 'custom-theme-load-path
-                    (file-name-as-directory "~/.emacs.d/el-get/replace-colorthemes/"))
        (load-theme 'dark-laptop t t)
        (enable-theme 'dark-laptop)
        ))

@@ -22,6 +22,7 @@
     auto-highlight-symbol
     coffee-mode
     color-moccur
+    color-theme-modern
     company
     company-go
     dockerfile-mode
