@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- Emacs 25
+- Emacs 25, 26
 
 ### Linux
 
