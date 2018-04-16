@@ -61,7 +61,7 @@
     multiple-cursors
     nginx-mode
     php-mode
-    popwin
+    ;; popwin
     powerline
     rhtml-mode
     rspec-mode
