@@ -35,7 +35,7 @@
     flymake
     flymake-coffee
     flymake-cursor
-    git-gutter
+    ;; git-gutter
     gnuplot-mode
     go-eldoc
     go-mode
@@ -61,7 +61,7 @@
     multiple-cursors
     nginx-mode
     php-mode
-    popwin
+    ;; popwin
     powerline
     rhtml-mode
     rspec-mode
