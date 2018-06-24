@@ -4,6 +4,7 @@
        (enable-theme 'dark-laptop)
        ))
 (set-face-foreground 'mode-line "green")
+(set-face-background 'mode-line "gray10")
 
 (custom-set-faces
  '(font-lock-constant-face ((t (:foreground "orange"))))
