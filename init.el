@@ -62,7 +62,6 @@
     nginx-mode
     php-mode
     ;; popwin
-    powerline
     rhtml-mode
     rspec-mode
     ruby-end
