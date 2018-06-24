@@ -1,15 +1,21 @@
-FROM quay.io/dtan4/emacs:latest
-MAINTAINER Daisuke Fujita (dtanshi45@gmail.com) <@dtan4>
+FROM ubuntu:18.04
 
-RUN apt-get update && \
-    apt-get install -y autoconf cmigemo git install-info libmigemo-dev texinfo && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+    && apt-get install --no-install-recommends -y \
+       emacs \
+       make \
+       ruby \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY el-get.lock /home/app/.emacs.d/
+ENV HOME /home/app
+WORKDIR /home/app
+
+COPY Makefile /home/app/.emacs.d/
 COPY init.el /home/app/.emacs.d/
 COPY inits /home/app/.emacs.d/inits
 COPY snippets /home/app/.emacs.d/snippets
 
-RUN emacs -batch --eval '(setq debug-on-error t)' -l /home/app/.emacs.d/init.el
+RUN cd /home/app/.emacs.d \
+    && make install
 
 CMD ["emacs", "--version"]
