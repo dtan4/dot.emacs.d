@@ -62,7 +62,6 @@
     nginx-mode
     php-mode
     ;; popwin
-    powerline
     rhtml-mode
     rspec-mode
     ruby-end
@@ -70,6 +69,7 @@
     sass-mode
     scss-mode
     slim-mode
+    smart-mode-line
     smartrep
     terraform-mode
     toml-mode
