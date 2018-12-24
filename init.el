@@ -24,7 +24,6 @@
     color-moccur
     color-theme-modern
     company
-    company-go
     company-lsp
     dockerfile-mode
     enh-ruby-mode
@@ -38,7 +37,6 @@
     flymake-cursor
     git-gutter
     gnuplot-mode
-    go-eldoc
     go-mode
     groovy-mode
     haml-mode
