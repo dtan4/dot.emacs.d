@@ -25,6 +25,7 @@
     color-theme-modern
     company
     company-go
+    company-lsp
     dockerfile-mode
     enh-ruby-mode
     exec-path-from-shell
@@ -53,6 +54,8 @@
     init-loader
     json-mode
     less-css-mode
+    lsp-mode
+    lsp-ui
     magit
     markdown-mode
     mmm-mode
