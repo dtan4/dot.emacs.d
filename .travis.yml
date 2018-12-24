@@ -4,6 +4,7 @@ sudo: required
 env:
   - EMACS_VERSION=25.1
   - EMACS_VERSION=25.2
+  - EMACS_VERSION=26.1
 before_install:
   - make symlink
   # Configure $PATH: Executables are installed to $HOME/bin
