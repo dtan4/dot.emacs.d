@@ -3,6 +3,7 @@
                           (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)
                           ))
 
+(setq gofmt-args (list "-s"))
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; (add-hook 'go-mode-hook 'flycheck-mode)
