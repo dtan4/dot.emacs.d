@@ -14,10 +14,6 @@
 ;; (setq flycheck-gometalinter-enable-linters '("golint" "varcheck" "vet"))
 ;; (setq flycheck-gometalinter-deadline "30s")
 
-(add-hook 'go-mode-hook #'lsp)
+(setenv "GO111MODULE" "on")
 
-(setq lsp-clients-go-language-server-flags '(
-    "-gocodecompletion"
-    "-diagnostics"
-    "-format-tool=gofmt"
-    "-lint-tool=golint"))
+(add-hook 'go-mode-hook #'lsp)
