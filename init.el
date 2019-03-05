@@ -50,7 +50,6 @@
     highlight-symbol
     htmlize
     indent-guide
-    init-loader
     json-mode
     less-css-mode
     magit
@@ -104,8 +103,9 @@
   (setq exec-path-from-shell-check-startup-files nil)
   (exec-path-from-shell-copy-envs envs))
 
-(require 'init-loader)
-;; http://d.hatena.ne.jp/syohex/20140706/1404637327
-(custom-set-variables
- '(init-loader-show-log-after-init 'error-only))
-(init-loader-load (concat user-emacs-directory "inits"))
+(use-package init-loader
+  :ensure t
+  :init
+  (setq init-loader-show-log-after-init 'error-only)
+  :config
+  (init-loader-load (concat user-emacs-directory "inits")))
