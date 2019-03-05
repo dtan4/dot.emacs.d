@@ -27,7 +27,6 @@
     company-go
     dockerfile-mode
     enh-ruby-mode
-    exec-path-from-shell
     expand-region
     feature-mode
     flycheck
@@ -98,10 +97,13 @@
   (load custom-file))
 
 ;; Enable environment variables for all package installations
-(let ((envs '("PATH" "GOPATH" "GOROOT")))
-  (exec-path-from-shell-initialize)
-  (setq exec-path-from-shell-check-startup-files nil)
-  (exec-path-from-shell-copy-envs envs))
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (let ((envs '("PATH" "GOPATH" "GOROOT")))
+    (exec-path-from-shell-initialize)
+    (setq exec-path-from-shell-check-startup-files nil)
+    (exec-path-from-shell-copy-envs envs)))
 
 (use-package init-loader
   :ensure t
