@@ -87,6 +87,13 @@
   (unless (package-installed-p pkg)
     (package-install pkg)))
 
+;; ensure to use use-package
+(unless package-archive-contents
+  (package-refresh-contents))
+(when (not (package-installed-p 'use-package))
+  (package-install 'use-package))
+(require 'use-package)
+
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
