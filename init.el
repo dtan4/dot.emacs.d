@@ -22,7 +22,6 @@
     color-moccur
     company
     company-go
-    dockerfile-mode
     enh-ruby-mode
     feature-mode
     flycheck
