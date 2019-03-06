@@ -22,7 +22,6 @@
     color-moccur
     company
     company-go
-    enh-ruby-mode
     feature-mode
     flycheck
     flycheck-gometalinter
@@ -41,9 +40,6 @@
     mozc-im
     php-mode
     ;; popwin
-    rhtml-mode
-    rspec-mode
-    ruby-end
     rust-mode
     sass-mode
     scss-mode
