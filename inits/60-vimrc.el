@@ -1,1 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.vimrc$" . vimrc-mode))
+(use-package vimrc-mode
+  :ensure t
+  :mode ("\\.vimrc$" . vimrc-mode))

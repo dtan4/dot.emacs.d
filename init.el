@@ -55,7 +55,6 @@
     scss-mode
     slim-mode
     toml-mode
-    vimrc-mode
     web-mode
     yaml-mode
     yasnippet)
