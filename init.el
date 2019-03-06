@@ -66,8 +66,7 @@
     vimrc-mode
     web-mode
     yaml-mode
-    yasnippet
-    zlc)
+    yasnippet)
   "package to be installed")
 
 (unless package-archive-contents (package-refresh-contents))
