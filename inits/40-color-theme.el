@@ -1,12 +1,12 @@
-;; Color theme
-(cond ((not (null window-system))
-       (load-theme 'dark-laptop t t)
-       (enable-theme 'dark-laptop)
-       ))
-(set-face-foreground 'mode-line "green")
-(set-face-background 'mode-line "gray10")
-
-(custom-set-faces
- '(font-lock-constant-face ((t (:foreground "orange"))))
- '(font-lock-preprocessor-face ((t (:foreground "orange"))))
- '(default ((t (:foreground "gray70")))))
+(use-package color-theme-modern
+  :ensure t
+  :config
+  (cond ((not (null window-system))
+         (load-theme 'dark-laptop t t)
+         (enable-theme 'dark-laptop)
+         ))
+  (set-face-foreground 'mode-line "green")
+  (set-face-background 'mode-line "gray10")
+  (set-face-attribute 'font-lock-constant-face t :foreground "orange")
+  (set-face-attribute 'font-lock-preprocessor-face t :foreground "orange")
+  (set-face-attribute 'default t :foreground "gray70"))
