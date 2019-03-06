@@ -54,7 +54,6 @@
     sass-mode
     scss-mode
     slim-mode
-    terraform-mode
     toml-mode
     vimrc-mode
     web-mode
