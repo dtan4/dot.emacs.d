@@ -24,7 +24,6 @@
     company-go
     dockerfile-mode
     enh-ruby-mode
-    expand-region
     feature-mode
     flycheck
     flycheck-gometalinter
