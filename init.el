@@ -30,7 +30,6 @@
     flymake
     flymake-coffee
     flymake-cursor
-    git-gutter
     gnuplot-mode
     go-eldoc
     go-mode
