@@ -42,7 +42,6 @@
     helm-gtags
     helm-ls-git
     helm-projectile
-    highlight-symbol
     htmlize
     indent-guide
     json-mode
