@@ -1,7 +1,7 @@
 (use-package multiple-cursors
   :ensure t
+  :bind ("C-M-c" . mc/edit-lines)
   :config
-  (global-set-key (kbd "C-M-c") 'mc/edit-lines)
   (use-package smartrep
     :ensure t
     :config
