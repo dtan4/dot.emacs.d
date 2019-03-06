@@ -32,12 +32,6 @@
     go-eldoc
     go-mode
     haml-mode
-    helm
-    helm-ag
-    helm-ghq
-    helm-gtags
-    helm-ls-git
-    helm-projectile
     htmlize
     indent-guide
     json-mode
