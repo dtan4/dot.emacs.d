@@ -65,7 +65,6 @@
     toml-mode
     undo-tree
     vimrc-mode
-    volatile-highlights
     web-mode
     yaml-mode
     yasnippet
