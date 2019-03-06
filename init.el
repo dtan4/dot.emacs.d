@@ -45,7 +45,6 @@
     indent-guide
     json-mode
     less-css-mode
-    magit
     markdown-mode
     mmm-mode
     mozc
