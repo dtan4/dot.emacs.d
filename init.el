@@ -17,8 +17,7 @@
 ;; - ruby-block no longer exists
 ;;
 (defvar packages
-  '(anzu
-    auto-highlight-symbol
+  '(auto-highlight-symbol
     coffee-mode
     color-moccur
     color-theme-modern
