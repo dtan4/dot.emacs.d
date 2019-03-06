@@ -1,2 +1,4 @@
-(add-to-list 'auto-mode-alist '("user-data$" . yaml-mode))
-(add-to-list 'auto-mode-alist '("\\.yml\\.erb$" . yaml-mode))
+(use-package yaml-mode
+  :ensure t
+  :mode (("user-data$" . yaml-mode)
+         ("\\.yml\\.erb$" . yaml-mode)))

@@ -56,7 +56,6 @@
     slim-mode
     toml-mode
     web-mode
-    yaml-mode
     yasnippet)
   "package to be installed")
 
