@@ -63,7 +63,6 @@
     slim-mode
     terraform-mode
     toml-mode
-    undo-tree
     vimrc-mode
     web-mode
     yaml-mode
