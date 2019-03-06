@@ -1,2 +1,5 @@
-(add-to-list 'auto-mode-alist '("nginx\\(.*\\).conf[^/]*$" . nginx-mode))
-(setq nginx-indent-level 2)
+(use-package nginx-mode
+  :ensure t
+  :mode ("nginx\\(.*\\).conf[^/]*$" . nginx-mode)
+  :config
+  (setq nginx-indent-level 2))

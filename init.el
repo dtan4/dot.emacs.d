@@ -45,7 +45,6 @@
     mmm-mode
     mozc
     mozc-im
-    nginx-mode
     php-mode
     ;; popwin
     rhtml-mode
