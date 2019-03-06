@@ -51,7 +51,6 @@
     mmm-mode
     mozc
     mozc-im
-    multiple-cursors
     nginx-mode
     php-mode
     ;; popwin
@@ -62,7 +61,6 @@
     sass-mode
     scss-mode
     slim-mode
-    smartrep
     terraform-mode
     toml-mode
     undo-tree
