@@ -1,8 +1,9 @@
-;; markdown-mode
-(add-to-list 'auto-mode-alist '("\\.text$" . gfm-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown$" . gfm-mode))
-(add-to-list 'auto-mode-alist '("\\.md$" . gfm-mode))
-(add-to-list 'auto-mode-alist '("\\.apib$" . gfm-mode))
-
-(setq markdown-indent-on-enter nil)
-(setq markdown-gfm-use-electric-backquote nil)
+(use-package markdown-mode
+  :ensure t
+  :mode (("\\.text$" . gfm-mode)
+         ("\\.markdown$" . gfm-mode)
+         ("\\.md$" . gfm-mode)
+         ("\\.apib$" . gfm-mode))
+  :config
+  (setq markdown-indent-on-enter nil)
+  (setq markdown-gfm-use-electric-backquote nil))

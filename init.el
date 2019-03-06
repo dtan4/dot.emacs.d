@@ -42,7 +42,6 @@
     indent-guide
     json-mode
     less-css-mode
-    markdown-mode
     mmm-mode
     mozc
     mozc-im
