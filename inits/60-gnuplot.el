@@ -1,1 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.plt$" . gnuplot-mode))
+(use-package gnuplot-mode
+  :ensure t
+  :mode ("\\.plt$" . gnuplot-mode))

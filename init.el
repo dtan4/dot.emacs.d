@@ -29,7 +29,6 @@
     flymake
     flymake-coffee
     flymake-cursor
-    gnuplot-mode
     go-eldoc
     go-mode
     groovy-mode
