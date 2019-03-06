@@ -66,7 +66,6 @@
     sass-mode
     scss-mode
     slim-mode
-    smart-mode-line
     smartrep
     terraform-mode
     toml-mode
