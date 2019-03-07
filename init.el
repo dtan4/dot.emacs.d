@@ -11,28 +11,6 @@
 
 (package-initialize)
 
-;;
-;; NOTE 2018/03/03
-;; - replace-colorthemes is not registered both gnu and melpa
-;; - ruby-block no longer exists
-;;
-(defvar packages
-  '(auto-highlight-symbol
-    color-moccur
-    feature-mode
-    htmlize
-    less-css-mode
-    mmm-mode
-    ;; popwin
-    sass-mode
-    scss-mode)
-  "package to be installed")
-
-(unless package-archive-contents (package-refresh-contents))
-(dolist (pkg packages)
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
-
 ;; ensure to use use-package
 (unless package-archive-contents
   (package-refresh-contents))
