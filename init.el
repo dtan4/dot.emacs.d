@@ -39,7 +39,6 @@
     mozc-im
     php-mode
     ;; popwin
-    rust-mode
     sass-mode
     scss-mode
     toml-mode
