@@ -37,8 +37,7 @@
     mozc-im
     ;; popwin
     sass-mode
-    scss-mode
-    web-mode)
+    scss-mode)
   "package to be installed")
 
 (unless package-archive-contents (package-refresh-contents))
