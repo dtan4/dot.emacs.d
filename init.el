@@ -40,7 +40,6 @@
     ;; popwin
     sass-mode
     scss-mode
-    toml-mode
     web-mode)
   "package to be installed")
 
