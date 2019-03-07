@@ -1,8 +1,11 @@
 ;; ref: Compatible issue with linum-mode in Emacs 26.1
 ;; https://github.com/syohex/emacs-git-gutter/issues/156
 
-(global-git-gutter-mode t)
-
-;; Emacs 25 or lower uses linum-mode
-(if (version< emacs-version "26.0")
-    (git-gutter:linum-setup))
+(use-package git-gutter
+  :ensure t
+  :init
+  (global-git-gutter-mode)
+  :config
+  ;; Emacs 25 or lower uses linum-mode
+  (if (version< emacs-version "26.0")
+      (git-gutter:linum-setup)))

@@ -1,6 +1,10 @@
-(global-auto-highlight-symbol-mode t)
-(ahs-set-idle-interval 0.3)
-(setq ahs-case-fold-search nil)
-
-(global-set-key (kbd "<f3>") 'highlight-symbol-at-point)
-(global-set-key (kbd "M-<f3>") 'highlight-symbol-remove-all)
+(use-package highlight-symbol
+  :ensure t
+  :config
+  (use-package auto-highlight-symbol
+    :ensure t
+    :init
+    (global-auto-highlight-symbol-mode)
+    :config
+    (ahs-set-idle-interval 0.3)
+    (setq ahs-case-fold-search nil)))

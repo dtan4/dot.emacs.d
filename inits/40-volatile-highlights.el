@@ -1,2 +1,4 @@
-(require 'volatile-highlights)
-(volatile-highlights-mode t)
+(use-package volatile-highlights
+  :ensure t
+  :config
+  (volatile-highlights-mode t))

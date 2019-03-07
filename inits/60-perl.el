@@ -1,6 +1,7 @@
-(add-to-list 'auto-mode-alist '("\\.pl$" . cperl-mode))
-(add-to-list 'auto-mode-alist '("\\.pm$" . cperl-mode))
-(add-to-list 'auto-mode-alist '("\\.t$" . cperl-mode))
-(add-to-list 'auto-mode-alist '("\\.psgi$" . cperl-mode))
-(add-to-list 'auto-mode-alist '("cpanfile$" . cperl-mode))
-(add-to-list 'auto-mode-alist '("Daikufile$" . cperl-mode))
+(use-package cperl-mode
+  :mode (("\\.pl$" . cperl-mode)
+         ("\\.pm$" . cperl-mode)
+         ("\\.t$" . cperl-mode)
+         ("\\.psgi$" . cperl-mode)
+         ("cpanfile$" . cperl-mode)
+         ("Daikufile$" . cperl-mode)))

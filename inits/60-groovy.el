@@ -1,1 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
+(use-package groovy-mode
+  :ensure t
+  :mode ("\\.gradle$" . groovy-mode))

@@ -1,1 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.tfstate$" . json-mode))
+(use-package json-mode
+  :ensure t
+  :mode ("\\.tfstate$" . json-mode))
