@@ -21,9 +21,7 @@
     coffee-mode
     color-moccur
     feature-mode
-    flymake
     flymake-coffee
-    flymake-cursor
     htmlize
     indent-guide
     less-css-mode
