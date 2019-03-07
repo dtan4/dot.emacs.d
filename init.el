@@ -21,7 +21,6 @@
     color-moccur
     feature-mode
     htmlize
-    indent-guide
     less-css-mode
     mmm-mode
     mozc
