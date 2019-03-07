@@ -23,8 +23,6 @@
     htmlize
     less-css-mode
     mmm-mode
-    mozc
-    mozc-im
     ;; popwin
     sass-mode
     scss-mode)
