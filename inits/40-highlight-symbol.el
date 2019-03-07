@@ -1,6 +1,10 @@
 (use-package highlight-symbol
   :ensure t
   :config
-  (global-auto-highlight-symbol-mode t)
-  (ahs-set-idle-interval 0.3)
-  (setq ahs-case-fold-search nil))
+  (use-package auto-highlight-symbol
+    :ensure t
+    :init
+    (global-auto-highlight-symbol-mode)
+    :config
+    (ahs-set-idle-interval 0.3)
+    (setq ahs-case-fold-search nil)))
