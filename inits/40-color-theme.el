@@ -9,4 +9,4 @@
   (set-face-background 'mode-line "gray10")
   (set-face-attribute 'font-lock-constant-face t :foreground "orange")
   (set-face-attribute 'font-lock-preprocessor-face t :foreground "orange")
-  (set-face-attribute 'default t :foreground "gray70"))
+  (set-face-attribute 'default nil :foreground "gray70"))
