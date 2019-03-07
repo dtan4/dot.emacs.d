@@ -20,14 +20,10 @@
   '(auto-highlight-symbol
     coffee-mode
     color-moccur
-    company-go
     feature-mode
-    flycheck-gometalinter
     flymake
     flymake-coffee
     flymake-cursor
-    go-eldoc
-    go-mode
     htmlize
     indent-guide
     less-css-mode
