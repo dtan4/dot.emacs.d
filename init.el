@@ -43,7 +43,6 @@
     rust-mode
     sass-mode
     scss-mode
-    slim-mode
     toml-mode
     web-mode)
   "package to be installed")
