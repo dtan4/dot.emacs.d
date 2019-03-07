@@ -32,7 +32,6 @@
     go-mode
     htmlize
     indent-guide
-    json-mode
     less-css-mode
     mmm-mode
     mozc
