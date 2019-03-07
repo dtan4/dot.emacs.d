@@ -30,7 +30,6 @@
     flymake-cursor
     go-eldoc
     go-mode
-    haml-mode
     htmlize
     indent-guide
     json-mode
