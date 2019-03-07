@@ -23,7 +23,6 @@
     company
     company-go
     feature-mode
-    flycheck
     flycheck-gometalinter
     flymake
     flymake-coffee
