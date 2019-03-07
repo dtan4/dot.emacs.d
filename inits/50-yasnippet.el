@@ -1,6 +1,7 @@
-(require 'yasnippet)
-(setq yas-snippet-dirs (append yas-snippet-dirs
-                               (expand-file-name "snippets" user-emacs-directory)))
-(yas-reload-all)
-
-(yas-global-mode 1)
+(use-package yasnippet
+  :ensure t
+  :config
+  (setq yas-snippet-dirs (append yas-snippet-dirs
+                                 (expand-file-name "snippets" user-emacs-directory)))
+  (yas-reload-all)
+  (yas-global-mode 1))

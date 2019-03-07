@@ -45,8 +45,7 @@
     scss-mode
     slim-mode
     toml-mode
-    web-mode
-    yasnippet)
+    web-mode)
   "package to be installed")
 
 (unless package-archive-contents (package-refresh-contents))
