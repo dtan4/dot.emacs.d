@@ -37,7 +37,6 @@
     mmm-mode
     mozc
     mozc-im
-    php-mode
     ;; popwin
     sass-mode
     scss-mode
