@@ -20,7 +20,6 @@
   '(auto-highlight-symbol
     coffee-mode
     color-moccur
-    company
     company-go
     feature-mode
     flycheck-gometalinter
