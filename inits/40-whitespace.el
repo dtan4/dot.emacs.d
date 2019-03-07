@@ -1,8 +1,9 @@
 ;; http://qiita.com/itiut@github/items/4d74da2412a29ef59c3a
 
 (use-package whitespace
+  :init
+  (global-whitespace-mode)
   :config
-  (global-whitespace-mode 1)
   (setq whitespace-style '(face
                            trailing
                            tabs

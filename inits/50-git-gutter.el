@@ -3,9 +3,9 @@
 
 (use-package git-gutter
   :ensure t
+  :init
+  (global-git-gutter-mode)
   :config
-  (global-git-gutter-mode t)
-
   ;; Emacs 25 or lower uses linum-mode
   (if (version< emacs-version "26.0")
       (git-gutter:linum-setup)))
