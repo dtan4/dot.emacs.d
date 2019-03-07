@@ -18,10 +18,8 @@
 ;;
 (defvar packages
   '(auto-highlight-symbol
-    coffee-mode
     color-moccur
     feature-mode
-    flymake-coffee
     htmlize
     indent-guide
     less-css-mode
