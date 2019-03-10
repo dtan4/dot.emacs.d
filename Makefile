@@ -1,11 +1,15 @@
 .DEFAULT_GOAL := install
 
+.PHONY: bingo
+bingo:
+	go get -u -v github.com/saibing/bingo
+
 .PHONY: clean
 clean:
 	rm -rf elpa
 
 .PHONY: install
-install:
+install: bingo
 	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
 
 .PHONY: integration-test
