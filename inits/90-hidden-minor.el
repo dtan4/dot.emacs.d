@@ -8,7 +8,6 @@
         ruby-block-mode
         ruby-end-mode
         rspec-mode
-        undo-tree-mode
         volatile-highlights-mode
         ))
 
