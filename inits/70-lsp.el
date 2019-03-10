@@ -44,8 +44,8 @@
     (lsp-ui-peek-fontify 'on-demand) ;; never, on-demand, or always
     :bind
     (:map lsp-ui-mode-map
-          ("M-." . lsp-ui-peek-find-definitions) ;; replace default M-? (xref-find-definitions)
-          ("M-?" . lsp-ui-peek-find-references) ;; replace default M-. (xref-find-references)
+          ("M-." . lsp-ui-peek-find-definitions) ;; replace default M-. (xref-find-definitions)
+          ("M-?" . lsp-ui-peek-find-references) ;; replace default M-? (xref-find-references)
           ("C-c i" . lsp-ui-peek-find-implementation))
     :hook
     (lsp-mode . lsp-ui-mode))
