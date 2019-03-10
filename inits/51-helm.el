@@ -12,6 +12,7 @@
   :config
   (define-key isearch-mode-map (kbd "M-o") 'helm-occur-from-isearch)
   (use-package helm-ag
+    :ensure t
     :bind ("M-g ." . helm-ag))
   (use-package helm-ghq
     :ensure t
