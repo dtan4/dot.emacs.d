@@ -18,3 +18,5 @@ recentf
 /transient
 
 /custom.el
+
+.lsp-session-*
