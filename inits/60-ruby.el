@@ -48,7 +48,6 @@
   (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
   (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
   (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
-  (add-hook 'enh-ruby-mode-hook 'indent-guide-mode)
   (add-hook 'enh-ruby-mode-hook #'yas-minor-mode)
 
   (use-package rhtml-mode
