@@ -5,6 +5,8 @@
 ## Prerequisites
 
 - Emacs 25, 26
+- [bingo](https://github.com/saibing/bingo)
+  - for go-mode & [lsp-mode](https://github.com/emacs-lsp/lsp-mode)
 
 ### Linux
 
