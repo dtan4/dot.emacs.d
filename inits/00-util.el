@@ -74,14 +74,15 @@
 ;; Enable highlighting current line
 ;; http://rubikitch.com/2015/05/14/global-hl-line-mode-timer/
 (use-package hl-line
+  :custom-face
+  (hl-line ((t (:background "gray10"))))
   :config
   (defun global-hl-line-timer-function ()
     (global-hl-line-unhighlight-all)
     (let ((global-hl-line-mode t))
       (global-hl-line-highlight)))
   (setq global-hl-line-timer
-        (run-with-idle-timer 0.03 t 'global-hl-line-timer-function))
-  (set-face-attribute 'hl-line t :background "gray10"))
+        (run-with-idle-timer 0.03 t 'global-hl-line-timer-function)))
 
 ;; http://stackoverflow.com/questions/3139970/open-a-file-at-line-with-filenameline-syntax/3141456#3141456
 (defadvice find-file (around find-file-line-number
