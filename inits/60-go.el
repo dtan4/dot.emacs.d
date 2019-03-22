@@ -4,17 +4,6 @@
   (add-hook 'before-save-hook 'gofmt-before-save)
   (setenv "GO111MODULE" "on")
 
-  (use-package company-go
-    :ensure t
-    :config
-    (add-hook 'go-mode-hook (lambda ()
-                              (set (make-local-variable 'company-backends) '(company-go))
-                              (company-mode)
-                              (local-set-key (kbd "M-.") 'godef-jump)
-                              (local-set-key (kbd "M-,") 'pop-tag-mark)
-                              (local-set-key (kbd "C-c C-r") 'go-remove-unused-imports)
-                              )))
-
   (use-package flycheck-gometalinter
     :ensure t
     :config
