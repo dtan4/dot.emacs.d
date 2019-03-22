@@ -45,6 +45,7 @@
     :bind
     (:map lsp-ui-mode-map
           ("M-." . lsp-ui-peek-find-definitions) ;; replace default M-. (xref-find-definitions)
+          ("M-," . xref-pop-marker-stack)
           ("M-?" . lsp-ui-peek-find-references) ;; replace default M-? (xref-find-references)
           ("C-c i" . lsp-ui-peek-find-implementation))
     :hook
