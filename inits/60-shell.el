@@ -2,6 +2,6 @@
   :mode ((".envrc$" . sh-mode)
          (".env$" . sh-mode)
          (".env.sample$" . sh-mode))
-  :config
-  (setq sh-basic-offset 2)
-  (setq sh-indentation 2))
+  :custom
+  (sh-basic-offset 2)
+  (sh-indentation 2))
