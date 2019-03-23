@@ -11,7 +11,7 @@
   (lsp-auto-guess-root t)
   (lsp-document-sync-method 'incremental) ;; always send incremental document
   (lsp-response-timeout 5)
-  (lsp-prefer-flymake 'flymake)
+  (lsp-prefer-flymake nil)
   (lsp-enable-completion-at-point nil)
   :hook
   (go-mode . lsp)
@@ -31,7 +31,7 @@
     (lsp-ui-doc-use-childframe t)
     (lsp-ui-doc-use-webkit t)
     ;; lsp-ui-flycheck
-    (lsp-ui-flycheck-enable nil)
+    (lsp-ui-flycheck-enable t)
     ;; lsp-ui-sideline
     (lsp-ui-sideline-enable nil)
     ;; lsp-ui-imenu
