@@ -13,9 +13,4 @@
     (setq flycheck-gometalinter-vendor t)
     (setq flycheck-gometalinter-disable-all t)
     (setq flycheck-gometalinter-enable-linters '("golint" "varcheck" "vet"))
-    (setq flycheck-gometalinter-deadline "30s"))
-
-  (use-package go-eldoc
-    :ensure t
-    :config
-    (add-hook 'go-mode-hook 'go-eldoc-setup)))
+    (setq flycheck-gometalinter-deadline "30s")))
