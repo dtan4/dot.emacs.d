@@ -11,7 +11,7 @@
   (lsp-auto-guess-root t)
   (lsp-document-sync-method 'incremental) ;; always send incremental document
   (lsp-response-timeout 5)
-  (lsp-prefer-flymake nil)
+  (lsp-prefer-flymake :none) ;; Disable both Flymake and Flycheck because it conflicts with flycheck-golangci-lint
   (lsp-enable-completion-at-point nil)
   :hook
   (go-mode . lsp)
@@ -31,7 +31,9 @@
     (lsp-ui-doc-use-childframe t)
     (lsp-ui-doc-use-webkit t)
     ;; lsp-ui-flycheck
-    (lsp-ui-flycheck-enable t)
+    ;; Disable this because this cannot coexist with other Flycheck linters
+    ;; https://github.com/emacs-lsp/lsp-ui/issues/234#issuecomment-459056600
+    ;; (lsp-ui-flycheck-enable t)
     ;; lsp-ui-sideline
     (lsp-ui-sideline-enable nil)
     ;; lsp-ui-imenu
