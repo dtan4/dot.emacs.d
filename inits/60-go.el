@@ -7,6 +7,6 @@
   (use-package flycheck-golangci-lint
     :ensure t
     :custom
-    (flycheck-golangci-lint-enable-linters '("golint" "varcheck" "vet"))
+    (flycheck-golangci-lint-enable-linters '("golint" "varcheck" "vet" "staticcheck" "misspell"))
     :hook ((go-mode . flycheck-golangci-lint-setup)
            (go-mode . flycheck-mode))))
