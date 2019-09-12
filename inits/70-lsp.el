@@ -13,6 +13,7 @@
   (lsp-response-timeout 5)
   (lsp-prefer-flymake :none) ;; Disable both Flymake and Flycheck because it conflicts with flycheck-golangci-lint
   (lsp-enable-completion-at-point nil)
+  (lsp-clients-go-server "gopls")
   :hook
   (go-mode . lsp)
   :config

@@ -1,15 +1,15 @@
 .DEFAULT_GOAL := install
 
-.PHONY: bingo
-bingo:
-	go get -u -v github.com/saibing/bingo
-
 .PHONY: clean
 clean:
 	rm -rf elpa
 
+.PHONY: gopls
+gopls:
+	GO111MODULE=on go get golang.org/x/tools/gopls@latest
+
 .PHONY: install
-install: bingo
+install: gopls
 	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
 
 .PHONY: integration-test
