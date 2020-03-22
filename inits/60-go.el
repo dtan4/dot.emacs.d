@@ -1,9 +1,8 @@
-(use-package go-mode
-  :config
-  (add-hook 'before-save-hook 'gofmt-before-save)
+(use-package go-mode)
 
-  (use-package flycheck-golangci-lint
-    :custom
-    (flycheck-golangci-lint-enable-linters '("golint" "varcheck" "vet" "staticcheck" "misspell"))
-    :hook ((go-mode . flycheck-golangci-lint-setup)
-           (go-mode . flycheck-mode))))
+;; TODO: looks this lint doesn't work well now
+(use-package flycheck-golangci-lint
+  ;; :requires (flycheck-mode)
+  :custom
+  (flycheck-golangci-lint-enable-linters '("deadcode" "gosimple" "govet" "staticcheck" "varcheck" "misspell"))
+  :hook (go-mode . flycheck-golangci-lint-setup))
