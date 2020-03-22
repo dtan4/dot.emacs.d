@@ -1,21 +1,19 @@
-FROM ubuntu:18.04
+FROM silex/emacs:26.3
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -y \
-       emacs \
-       make \
-       ruby \
-    && rm -rf /var/lib/apt/lists/*
+  && apt-get install -y \
+    git \
+    make \
+  && rm -rf /var/lib/apt/lists/*
 
-ENV HOME /home/app
-WORKDIR /home/app
+WORKDIR /root/.emacs.d
 
-COPY Makefile /home/app/.emacs.d/
-COPY init.el /home/app/.emacs.d/
-COPY inits /home/app/.emacs.d/inits
-COPY snippets /home/app/.emacs.d/snippets
+COPY Makefile /root/.emacs.d/Makefile
+COPY init.el /root/.emacs.d/init.el
+COPY inits /root/.emacs.d/inits
+COPY snippets /root/.emacs.d/snippets
+COPY straight/versions/default.el /root/.emacs.d/straight/versions/default.el
 
-RUN cd /home/app/.emacs.d \
-    && make install
+RUN make install
 
-CMD ["emacs", "--version"]
+ENTRYPOINT ["emacs"]
