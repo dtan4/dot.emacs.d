@@ -22,3 +22,4 @@ recentf
 .lsp-session-*
 
 /straight
+!/straight/versions/default.el
