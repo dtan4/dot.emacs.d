@@ -20,4 +20,4 @@ jobs:
             registry: quay.io
             repository: dtan4/emacs
             tag_with_ref: true
-            push: ${{ github.ref == "refs/heads/master" }}
+            push: ${{ github.ref == 'refs/heads/master' }}
