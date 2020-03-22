@@ -20,3 +20,5 @@ recentf
 /custom.el
 
 .lsp-session-*
+
+/straight
