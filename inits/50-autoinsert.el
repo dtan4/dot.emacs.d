@@ -1,6 +1,7 @@
 ;; auto-insert-mode
 (use-package autoinsert
   :config
+  (setq auto-insert-query nil) ;; skip prompt
   (setq auto-insert-directory (concat user-emacs-directory "template"))
   ;; 各ファイルによってテンプレートを切り替える
   (setq auto-insert-alist
