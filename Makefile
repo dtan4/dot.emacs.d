@@ -4,12 +4,8 @@
 clean:
 	rm -rf elpa
 
-.PHONY: gopls
-gopls:
-	GO111MODULE=on go get golang.org/x/tools/gopls@latest
-
 .PHONY: install
-install: gopls
+install:
 	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
 
 .PHONY: integration-test
