@@ -1,8 +1,6 @@
 (use-package highlight-symbol
-  :ensure t
   :config
   (use-package auto-highlight-symbol
-    :ensure t
     :init
     (global-auto-highlight-symbol-mode)
     :config

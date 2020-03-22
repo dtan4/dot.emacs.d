@@ -1,5 +1,4 @@
 (use-package highlight-indent-guides
-  :ensure t
   :hook (yaml-mode . highlight-indent-guides-mode)
   :custom
   (highlight-indent-guides-character ?\|)

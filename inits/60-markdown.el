@@ -1,5 +1,4 @@
 (use-package markdown-mode
-  :ensure t
   :mode (("\\.text$" . gfm-mode)
          ("\\.markdown$" . gfm-mode)
          ("\\.md$" . gfm-mode)

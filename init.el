@@ -27,7 +27,6 @@
 
 ;; Enable environment variables for all package installations
 (use-package exec-path-from-shell
-  :ensure t
   :config
   (let ((envs '("PATH" "GOPATH" "GOROOT")))
     (exec-path-from-shell-initialize)
@@ -35,7 +34,6 @@
     (exec-path-from-shell-copy-envs envs)))
 
 (use-package init-loader
-  :ensure t
   :init
   (setq init-loader-show-log-after-init 'error-only)
   :config

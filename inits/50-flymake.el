@@ -1,5 +1,4 @@
 (use-package flymake
-  :ensure t
   :bind (("M-e" . flymake-goto-next-error)
          ("M-E" . flymake-goto-prev-error))
   :config

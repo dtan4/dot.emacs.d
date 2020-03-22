@@ -1,5 +1,4 @@
 (use-package enh-ruby-mode
-  :ensure t
   :mode (("\\.rb$" . enh-ruby-mode)
          ("Rakefile$" . enh-ruby-mode)
          ("\\.rake$" . enh-ruby-mode)
@@ -51,16 +50,13 @@
   (add-hook 'enh-ruby-mode-hook #'yas-minor-mode)
 
   (use-package rhtml-mode
-    :ensure t
     :mode ("\\.erb$" . rhtml-mode))
 
   (use-package rspec-mode
-    :ensure t
     :hook enh-ruby-mode
     :config
     (setq rspec-use-rake-flag nil)
     (setq rspec-primary-source-dirs '("app")))
 
   (use-package ruby-end
-    :ensure t
     :hook (enh-ruby-mode . ruby-end-mode)))

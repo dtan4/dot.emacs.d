@@ -1,5 +1,4 @@
 (use-package coffee-mode
-  :ensure t
   :config
   (defun coffee-custom ()
     "coffee-mode-hook"
@@ -14,7 +13,6 @@
                  (define-key coffee-mode-map (kbd "<backspace>") 'delete-backward-char))))
 
   (use-package flymake-coffee
-    :ensure t
     :config
     (add-hook 'coffee-mode-hook 'flymake-coffee-load)
     (setq flymake-coffee-coffeelint-configuration-file
