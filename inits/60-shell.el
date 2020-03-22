@@ -1,4 +1,5 @@
 (use-package sh-mode
+  :straight nil
   :mode ((".envrc$" . sh-mode)
          (".env$" . sh-mode)
          (".env.sample$" . sh-mode))

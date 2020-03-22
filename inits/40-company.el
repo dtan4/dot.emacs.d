@@ -1,5 +1,4 @@
 (use-package company
-  :ensure t
   :bind ("M-/" . company-complete)
   :init
   (global-company-mode)

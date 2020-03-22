@@ -1,9 +1,7 @@
 (use-package mozc
-  :ensure t
   :bind ("M-`" . toggle-input-method)
   :config
   (use-package mozc-im
-    :ensure t
     :config
     (setq default-input-method "japanese-mozc")
     (setq mozc-candidate-style 'overlay)

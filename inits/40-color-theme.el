@@ -1,5 +1,4 @@
 (use-package color-theme-modern
-  :ensure t
   :config
   (cond ((not (null window-system))
          (load-theme 'dark-laptop t t)

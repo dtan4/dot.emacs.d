@@ -1,5 +1,4 @@
 (use-package helm
-  :ensure t
   ;; load helm package immediately
   ;; Without this, "C-x w" doesn't work after Emacs launched
   :demand t
@@ -12,20 +11,15 @@
   :config
   (define-key isearch-mode-map (kbd "M-o") 'helm-occur-from-isearch)
   (use-package helm-ag
-    :ensure t
     :bind ("M-g ." . helm-ag))
   (use-package helm-ghq
-    :ensure t
     :bind ("C-x w" . helm-ghq))
   (use-package helm-gtags
-    :ensure t
     :bind (("M-." . helm-gtags-select)
            ("M-," . helm-gtags-find-tag-from-here)))
   (use-package helm-ls-git
-    :ensure t
     :bind ("C-x g" . helm-ls-git-ls))
   (use-package helm-projectile
-    :ensure t
     :config
     (defun projectile-helm-ag ()
       (interactive)

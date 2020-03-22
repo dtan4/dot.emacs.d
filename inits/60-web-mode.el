@@ -1,5 +1,4 @@
 (use-package web-mode
-  :ensure t
   :mode (("\\.phtml$" . web-mode)
          ("\\.tpl\\.php$" . web-mode)
          ("\\.jsp$" . web-mode)

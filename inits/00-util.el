@@ -34,6 +34,7 @@
 
 ;; same name buffers
 (use-package uniquify
+  :straight nil
   :config
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets))
 

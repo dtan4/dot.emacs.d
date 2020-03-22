@@ -1,5 +1,4 @@
 (use-package yasnippet
-  :ensure t
   :config
   (setq yas-snippet-dirs (append yas-snippet-dirs
                                  (expand-file-name "snippets" user-emacs-directory)))

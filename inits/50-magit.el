@@ -1,5 +1,4 @@
 (use-package magit
-  :ensure t
   :bind (("C-c g" . magit-status)
          ("C-x v g" . magit-status)
          ("C-c b" . magit-blame)

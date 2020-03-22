@@ -1,7 +1,6 @@
 ;; inspired by https://qiita.com/Ladicle/items/feb5f9dce9adf89652cf
 
 (use-package lsp-mode
-  :ensure t
   :custom
   ;; debug
   (lsp-print-io nil)
@@ -20,7 +19,6 @@
   (require 'lsp-clients)
   ;; LSP UI tools
   (use-package lsp-ui
-    :ensure t
     :custom
     ;; lsp-ui-doc
     (lsp-ui-doc-enable nil)
@@ -55,7 +53,6 @@
     (lsp-mode . lsp-ui-mode))
   ;; Lsp completion
   (use-package company-lsp
-    :ensure t
     :custom
     (company-lsp-cache-candidates t) ;; always using cache
     (company-lsp-async t)
