@@ -19,26 +19,11 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-;; http://www.wagavulin.jp/entry/2016/07/04/211631
+;; only for package-list-package
 (require 'package)
-
-;;;;; add melpa and orgmode for packages
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")
         ("melpa" . "http://melpa.org/packages/")))
-
-(package-initialize)
-
-;; ensure to use use-package
-(unless package-archive-contents
-  (package-refresh-contents))
-(when (not (package-installed-p 'use-package))
-  (package-install 'use-package))
-(require 'use-package)
-
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-(when (file-exists-p custom-file)
-  (load custom-file))
 
 ;; Enable environment variables for all package installations
 (use-package exec-path-from-shell
