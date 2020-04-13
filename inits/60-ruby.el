@@ -47,16 +47,19 @@
   (add-hook 'enh-ruby-mode-hook 'electric-pair-mode)
   (add-hook 'enh-ruby-mode-hook 'electric-indent-mode)
   (add-hook 'enh-ruby-mode-hook 'electric-layout-mode)
-  (add-hook 'enh-ruby-mode-hook #'yas-minor-mode)
+  (add-hook 'enh-ruby-mode-hook #'yas-minor-mode))
 
-  (use-package rhtml-mode
-    :mode ("\\.erb$" . rhtml-mode))
+(use-package rhtml-mode
+  :after enh-ruby-mode
+  :mode ("\\.erb$" . rhtml-mode))
 
-  (use-package rspec-mode
-    :hook enh-ruby-mode
-    :config
-    (setq rspec-use-rake-flag nil)
-    (setq rspec-primary-source-dirs '("app")))
+(use-package rspec-mode
+  :after enh-ruby-mode
+  :hook enh-ruby-mode
+  :config
+  (setq rspec-use-rake-flag nil)
+  (setq rspec-primary-source-dirs '("app")))
 
-  (use-package ruby-end
-    :hook (enh-ruby-mode . ruby-end-mode)))
+(use-package ruby-end
+  :after enh-ruby-mode
+  :hook (enh-ruby-mode . ruby-end-mode))

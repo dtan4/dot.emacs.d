@@ -23,26 +23,27 @@
   ;; http://blog.shibayu36.org/entry/2016/03/17/183209
   (add-hook 'web-mode-hook
             '(lambda ()
-               (setq web-mode-enable-auto-indentation nil)))
+               (setq web-mode-enable-auto-indentation nil))))
 
-  (use-package flycheck
-    :config
-    (flycheck-define-checker jsxhint-checker
-      "A JSX syntax and style checker based on JSXHint."
+(use-package flycheck
+  :requires web-mode
+  :config
+  (flycheck-define-checker jsxhint-checker
+                           "A JSX syntax and style checker based on JSXHint."
 
-      :command ("jsxhint" source)
-      :error-patterns
-      ((error line-start (1+ nonl) ": line " line ", col " column ", " (message) line-end))
-      :modes (web-mode))
+                           :command ("jsxhint" source)
+                           :error-patterns
+                           ((error line-start (1+ nonl) ": line " line ", col " column ", " (message) line-end))
+                           :modes (web-mode))
 
-    (add-hook 'web-mode-hook
-              (lambda ()
-                (flycheck-add-mode 'javascript-eslint 'web-mode)
-                (flycheck-mode)))
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (flycheck-add-mode 'javascript-eslint 'web-mode)
+              (flycheck-mode)))
 
-    (add-hook 'web-mode-hook
-              (lambda ()
-                (when (equal web-mode-content-type "jsx")
-                  ;; enable flycheck
-                  (flycheck-select-checker 'jsxhint-checker)
-                  (flycheck-mode))))))
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (when (equal web-mode-content-type "jsx")
+                ;; enable flycheck
+                (flycheck-select-checker 'jsxhint-checker)
+                (flycheck-mode)))))

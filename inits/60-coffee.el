@@ -10,10 +10,11 @@
             '(lambda()
                (progn
                  (coffee-custom)
-                 (define-key coffee-mode-map (kbd "<backspace>") 'delete-backward-char))))
+                 (define-key coffee-mode-map (kbd "<backspace>") 'delete-backward-char)))))
 
-  (use-package flymake-coffee
-    :config
-    (add-hook 'coffee-mode-hook 'flymake-coffee-load)
-    (setq flymake-coffee-coffeelint-configuration-file
-          (expand-file-name "~/.coffeelint-config.json"))))
+(use-package flymake-coffee
+  :requires (flymake coffee-mode)
+  :config
+  (add-hook 'coffee-mode-hook 'flymake-coffee-load)
+  (setq flymake-coffee-coffeelint-configuration-file
+        (expand-file-name "~/.coffeelint-config.json")))
