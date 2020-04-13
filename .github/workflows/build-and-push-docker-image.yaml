@@ -2,12 +2,27 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
+  #   branches:
+  #     - master
+  # pull_request:
 
 jobs:
-  build-and-push:
+  # build-and-push-to-quay:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #     - name: Build and Push Docker image
+  #       uses: docker/build-push-action@v1
+  #       with:
+  #           username: ${{ secrets.DOCKER_USERNAME }}
+  #           password: ${{ secrets.DOCKER_PASSWORD }}
+  #           registry: quay.io
+  #           repository: dtan4/emacs
+  #           tag_with_ref: true
+  #           push: ${{ github.ref == 'refs/heads/master' }}
+
+  build-and-push-to-github-packages:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,9 +30,9 @@ jobs:
       - name: Build and Push Docker image
         uses: docker/build-push-action@v1
         with:
-            username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
-            registry: quay.io
-            repository: dtan4/emacs
-            tag_with_ref: true
-            push: ${{ github.ref == 'refs/heads/master' }}
+          username: dtan4
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: dtan4/dot.emacs.d/emacs
+          tag_with_ref: true
+          # push: ${{ github.ref == 'refs/heads/master' }}
