@@ -9,6 +9,7 @@
          ("M-y" . helm-show-kill-ring)
          ("M-o" . helm-occur))
   :config
+  (setq helm-buffer-max-length 50)
   (define-key isearch-mode-map (kbd "M-o") 'helm-occur-from-isearch)
   (use-package helm-ag
     :bind ("M-g ." . helm-ag))
