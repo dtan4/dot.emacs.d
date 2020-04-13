@@ -2,6 +2,8 @@
  ("anzu" . "ffbe938d60f77eddea5168e4b3c2680e9cdb344a")
  ("auto-highlight-symbol" . "26573de912d760e04321b350897aea70958cee8b")
  ("avy" . "3bf83140fad4c28f2dc4c7107b9d8fef84d17cb9")
+ ("beacon" . "bde78180c678b233c94321394f46a81dc6dce1da")
+ ("browse-at-remote" . "6aecae4b5d202e582425fc8aa2c9c2b6a4779f25")
  ("coffee-mode" . "35a41c7d8233eac0b267d9593e67fb8b6235e134")
  ("company-lsp" . "f921ffa0cdc542c21dc3dd85f2c93df4288e83bd")
  ("company-mode" . "955f80e6c911a818611887bc35658af9e925ed66")
