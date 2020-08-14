@@ -1,0 +1,16 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: testfunc
+# key: testfunc
+# binding: direct-keybinding
+# --
+func Test$1(t *testing.T) {
+	testcases := map[string]struct {
+	}{}
+
+	for name, tc := range testcases {
+		tc := tc
+		t.Run(name, func(t *testing.T) {
+			t.Parallel()
+		})
+	}
+}
