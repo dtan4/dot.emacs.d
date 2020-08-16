@@ -26,7 +26,23 @@ make symlink
 
 ### For Emacs on Terminal
 
-Due to the restrictions on terminal, Emacs cannot recognize some complex keybinds with <kbd>Ctrl</kbd> by default.
+#### 24-bit color
+
+To enable 24-bit color, you need to install terminal definitions,
+
+```bash
+make setup-screen-24bit
+```
+
+and specify `TERM=xterm-24bit` when you start Emacs.
+
+```bash
+TERM=xterm-24bit emacs -nw
+```
+
+#### Complex key binds
+
+Due to the restrictions on terminal, Emacs cannot recognize some complex key binds with <kbd>Ctrl</kbd> by default.
 However, thanks to `event-apply-control-modifier` function, which converts `C-x @ c <key>` to `C-<key>` we can use those keybinds by adding the following custom key bindings in your terminal preferences (e.g. iTerm2 "Preferences > Keys > Key Bindings").
 
 | Emacs key bind | Hex Codes |
