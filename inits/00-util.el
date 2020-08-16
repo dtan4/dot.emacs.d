@@ -101,3 +101,10 @@
         ;; goto-line is for interactive use
         (goto-char (point-min))
         (forward-line (1- line-number))))))
+
+;; Mouse support on Emacs on Terminal
+;; https://stackoverflow.com/a/62266648
+(unless (display-graphic-p)
+  (xterm-mouse-mode 1)
+  (global-set-key (kbd "<mouse-4>") 'scroll-down-line)
+  (global-set-key (kbd "<mouse-5>") 'scroll-up-line))

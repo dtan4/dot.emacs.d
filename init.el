@@ -28,10 +28,11 @@
 ;; Enable environment variables for all package installations
 (use-package exec-path-from-shell
   :config
-  (let ((envs '("PATH" "GOPATH" "GOROOT")))
-    (exec-path-from-shell-initialize)
-    (setq exec-path-from-shell-check-startup-files nil)
-    (exec-path-from-shell-copy-envs envs)))
+  (if (display-graphic-p)
+      (let ((envs '("PATH" "GOPATH" "GOROOT")))
+        (exec-path-from-shell-initialize)
+        (setq exec-path-from-shell-check-startup-files nil)
+        (exec-path-from-shell-copy-envs envs))))
 
 (use-package init-loader
   :init

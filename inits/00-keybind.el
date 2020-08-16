@@ -30,3 +30,6 @@
 
 ;; M-x align-regexp =
 (global-set-key (kbd "C-x \\") 'align-regexp)
+
+;; for Emacs on terminal: Same as C-BACKSPACE in GUI
+(global-set-key (kbd "C-DEL") 'backward-kill-word)
