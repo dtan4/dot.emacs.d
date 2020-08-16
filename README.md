@@ -24,6 +24,17 @@ make
 make symlink
 ```
 
+### For Emacs on Terminal
+
+Due to the restrictions on terminal, Emacs cannot recognize some complex keybinds with <kbd>Ctrl</kbd> by default.
+However, thanks to `event-apply-control-modifier` function, which converts `C-x @ c <key>` to `C-<key>` we can use those keybinds by adding the following custom key bindings in your terminal preferences (e.g. iTerm2 "Preferences > Keys > Key Bindings").
+
+| Emacs key bind | Hex Codes |
+|----------------|-----------|
+| `C->` | `0x18 0x40 0x63 0x3e` |
+| `C-<` | `0x18 0x40 0x63 0x3c` |
+| `C-DEL` | `0x18 0x40 0x63 0x7f` |
+
 ## Play on Docker
 
 ```bash
