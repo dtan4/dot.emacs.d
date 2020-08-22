@@ -1,8 +1,7 @@
 (if (display-graphic-p)
-    (if (find-font (font-spec :name "Ricty"))
+    (if (find-font (font-spec :name "Ricty Diminished"))
         (set-face-attribute 'default nil
-                            :family "Ricty"
+                            :family "Ricty Diminished"
                             :height 120))
-  ;; (set-fontset-font nil 'japanese-jisx0208
-  ;;                   (font-spec :family "Ricty" :registry "unicode-bmp"))
-  )
+  (set-fontset-font nil 'japanese-jisx0208
+                    (font-spec :family "Ricty Diminished" :height 120)))
