@@ -3,6 +3,7 @@
   (lsp-print-io nil)
   (lsp-print-performance nil)
   (lsp-prefer-flymake :none)
+  (lsp-completion-provider :capf)
   :commands (lsp lsp-deferred)
   :hook
   (go-mode . lsp-deferred)
@@ -46,10 +47,3 @@
         ("M-," . xref-pop-marker-stack)
         ("M-?" . lsp-ui-peek-find-references) ;; replace default M-? (xref-find-references)
         ("C-c i" . lsp-ui-peek-find-implementation)))
-
-;; Lsp completion
-(use-package company-lsp
-  :custom
-  (company-lsp-cache-candidates t) ;; always using cache
-  (company-lsp-async t)
-  (company-lsp-enable-recompletion nil))
