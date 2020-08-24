@@ -3,4 +3,5 @@
   (projectile-global-mode)
   :config
   (add-to-list 'projectile-globally-ignored-directories "Godeps")
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)  )
+  (add-to-list 'projectile-project-root-files "go.mod")
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map))
