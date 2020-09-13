@@ -1,10 +1,10 @@
 (if (display-graphic-p)
-    (setq initial-frame-alist
-          (append (list
-                   '(width . 80)
-                   '(height . 40)
-                   )
-                  initial-frame-alist))
-  (setq default-frame-alist initial-frame-alist)
-
-  (set-scroll-bar-mode nil))
+    (progn
+      (setq initial-frame-alist
+            (append (list
+                     '(width . 80)
+                     '(height . 40)
+                     )
+                    initial-frame-alist))
+      (setq default-frame-alist initial-frame-alist)
+      (set-scroll-bar-mode nil)))
