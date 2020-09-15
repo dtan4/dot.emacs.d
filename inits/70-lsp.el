@@ -7,6 +7,7 @@
   :commands (lsp lsp-deferred)
   :hook
   (go-mode . lsp-deferred)
+  (rust-mode . lsp-deferred)
   :config
   ;; (lsp-register-custom-settings
   ;;  '(("gopls.staticcheck" t t)))
