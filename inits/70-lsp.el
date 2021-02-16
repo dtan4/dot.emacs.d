@@ -8,6 +8,8 @@
   :hook
   (go-mode . lsp-deferred)
   (rust-mode . lsp-deferred)
+  (c-mode . lsp-deferred)
+  (c++-mode . lsp-deferred)
   :config
   ;; (lsp-register-custom-settings
   ;;  '(("gopls.staticcheck" t t)))
