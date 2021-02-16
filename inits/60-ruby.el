@@ -14,9 +14,9 @@
   :interpreter "ruby"
   :init
   ;; PATH to the ruby installed by rbenv
-  (setenv "PATH" (concat (expand-file-name "~/.anyenv/envs/rbenv/shims:") (getenv "PATH")))
+  (setenv "PATH" (concat (expand-file-name "~/.rbenv/shims:") (getenv "PATH")))
   :config
-  (setq enh-ruby-program "~/.anyenv/envs/rbenv/shims/ruby")
+  (setq enh-ruby-program "~/.rbenv/shims/ruby")
   (setq enh-ruby-deep-indent-paren nil)
   ;; http://willnet.in/13
   (defadvice enh-ruby-indent-line (after unindent-closing-paren activate)
