@@ -6,7 +6,12 @@ clean:
 
 .PHONY: install
 install:
-	emacs -batch --eval '(setq debug-on-error t)' -l ./init.el
+	emacs -batch -l ./init.el -f straight-thaw-versions
+
+.PHONY: update-deps
+update-deps:
+	emacs -batch -l ./init.el -f straight-pull-all
+	emacs -batch -l ./init.el -f straight-freeze-versions
 
 .PHONY: integration-test
 integration-test:
