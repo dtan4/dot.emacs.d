@@ -1,3 +1,7 @@
+;; load color-theme-modern in CUI
+;; to make this package able to upgrade by script
+(use-package color-theme-modern)
+
 (if (display-graphic-p)
     (use-package color-theme-modern
       :config
