@@ -1,4 +1,9 @@
 #!/bin/bash
 
-set -eu
-set -o pipefail
+main() {
+  set -eu
+  set -o pipefail
+
+}
+
+main
